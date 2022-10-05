@@ -268,6 +268,7 @@ const NAV_ITEMS: ReadonlyArray<NavItem> = [
         label: 'Portfolio',
         subLabel: 'Current and completed projects',
         href: '/portfolio',
+        wip: true,
       },
       {
         label: 'How to get involved',

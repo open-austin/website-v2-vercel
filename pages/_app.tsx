@@ -13,7 +13,10 @@ function MyApp({ Component, pageProps }: AppProps) {
     <ChakraProvider theme={theme}>
       <Head>
         <title>Open Austin</title>
-        <meta name="description" content="Open Austin -- FILL ME IN" />
+        <meta
+          name="description"
+          content="Open Austin is a volunteer citizen brigade advocating for open government, open data, and civic application development since 2009."
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />

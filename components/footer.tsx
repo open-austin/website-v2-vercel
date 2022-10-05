@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import {
   Box,
   Container,
@@ -13,7 +14,6 @@ import { ReactNode } from 'react'
 import { FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa'
 import { BiMailSend } from 'react-icons/bi'
 import { Link, LinkProps } from './link'
-import Logo from './logo'
 
 type SocialLink = LinkProps & {
   label: string
@@ -104,10 +104,7 @@ export default function LargeWithNewsletter() {
         >
           <Stack spacing={6} gridColumn={{ base: '1 / -1', md: '1' }}>
             <Box alignSelf="center">
-              <Logo
-                color={useColorModeValue('gray.700', 'white')}
-                height={'5em'}
-              />
+              <Image priority src={'/assets/logo.svg'} width={60} height={60} />
             </Box>
             <Text fontSize={'sm'} alignSelf="center">
               © 2022 Open Austin. All rights reserved

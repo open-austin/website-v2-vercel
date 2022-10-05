@@ -3,7 +3,6 @@ import {
   ListItemProps,
   Text,
 } from '@chakra-ui/react'
-import { ReactElement } from 'react'
 
 export type Props = ListItemProps
 

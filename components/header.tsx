@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import {
   Box,
   Flex,
@@ -22,7 +23,6 @@ import {
 } from '@chakra-ui/icons'
 import DonateButton from './donateButton'
 import DarkModeSwitch from './darkModeSwitch'
-import Logo from './logo'
 import { Link as NextLink } from './link'
 
 export default function WithSubnavigation() {
@@ -57,10 +57,7 @@ export default function WithSubnavigation() {
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
           <Link href="/">
-            <Logo
-              color={useColorModeValue('gray.700', 'white')}
-              height={'3rem'}
-            />
+            <Image priority src={'/assets/logo.svg'} width={60} height={60} />
           </Link>
           <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
             <DesktopNav />
@@ -144,13 +141,15 @@ const DesktopSubNav = ({ label, href, subLabel, wip }: NavItem) => {
       display={'block'}
       p={2}
       rounded={'md'}
-      _hover={{ bg: useColorModeValue('pink.50', 'gray.900') }}
+      _hover={{ bg: useColorModeValue('orange.100', 'gray.900') }}
     >
       <Stack direction={'row'} align={'center'}>
         <Box>
           <Text
             transition={'all .3s ease'}
-            _groupHover={{ color: 'pink.400' }}
+            _groupHover={{
+              color: useColorModeValue('orange.500', 'orange.600'),
+            }}
             fontWeight={500}
           >
             {label}
@@ -160,7 +159,10 @@ const DesktopSubNav = ({ label, href, subLabel, wip }: NavItem) => {
               </Badge>
             )}
           </Text>
-          <Text fontSize={'sm'} color={'pink.900'}>
+          <Text
+            fontSize={'sm'}
+            color={useColorModeValue('gray.800', 'gray.200')}
+          >
             {subLabel}
           </Text>
         </Box>
@@ -173,7 +175,12 @@ const DesktopSubNav = ({ label, href, subLabel, wip }: NavItem) => {
           align={'center'}
           flex={1}
         >
-          <Icon color={'pink.400'} w={5} h={5} as={ChevronRightIcon} />
+          <Icon
+            color={useColorModeValue('pink.900', 'gray.200')}
+            w={5}
+            h={5}
+            as={ChevronRightIcon}
+          />
         </Flex>
       </Stack>
     </Link>

@@ -31,7 +31,7 @@ const Hero = () => (
       bgGradient={'linear(to-r, blackAlpha.600, transparent)'}
     >
       <Stack
-        maxW={'2xl'}
+        maxW={'3xl'}
         align={'flex-start'}
         spacing={6}
         justifyContent="center"
@@ -48,7 +48,7 @@ const Hero = () => (
             as="h1"
             color={'orange.300'}
             textAlign="center"
-            fontSize={useBreakpointValue({ base: '6xl', md: '8xl' })}
+            fontSize={useBreakpointValue({ base: '6xl', md: '7xl' })}
             fontWeight={900}
           >
             Open Austin
@@ -58,6 +58,7 @@ const Hero = () => (
             align="center"
             fontWeight={500}
             lineHeight={1.2}
+            p={4}
             fontSize={useBreakpointValue({ base: 'xl', md: 'lg' })}
           >
             Open Austin addresses local social and civic challenges through
@@ -72,7 +73,7 @@ const Hero = () => (
             textAlign="center"
             fontSize={useBreakpointValue({ base: '3xl', md: '5xl' })}
             fontWeight={700}
-            p={4}
+            pb={4}
           >
             All are welcome!
           </Heading>

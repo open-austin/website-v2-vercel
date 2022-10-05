@@ -66,6 +66,11 @@ const fontWeights = {
   black: 900,
 }
 
+const fonts = {
+  heading: `'Crimson Text', sans-serif`,
+  // body: `'Raleway', sans-serif`,
+}
+
 const components = {
   Link: {
     baseStyle: {
@@ -189,5 +194,6 @@ const layerStyles = {
 export const theme = extendTheme({
   config,
   components,
+  fonts,
   layerStyles,
 })

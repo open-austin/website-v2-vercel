@@ -1,6 +1,6 @@
-import SearchBar from '../components/SearchBar'
 import { useState } from 'react'
 import Projects from '../components/projects'
+import Search from '../components/search'
 
 const Portfolio = () => {
   const [currentCategory, setCurrentCategory] = useState<Set<string>>(new Set())
@@ -8,7 +8,7 @@ const Portfolio = () => {
 
   return (
     <>
-      <SearchBar
+      <Search
         setCurrentCategory={setCurrentCategory}
         setCurrentStatus={setCurrentStatus}
       />

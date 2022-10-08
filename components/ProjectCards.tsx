@@ -133,7 +133,7 @@ const ProjectCards = ({ currentCategory, currentStatus }: Props) => {
               <Box>
                 Technologies:{' '}
                 {data.stack?.map((tech, i) => {
-                  if (i === data.stack.length - 1) {
+                  if (data.stack && i === data.stack.length - 1) {
                     return tech
                   } else {
                     return `${tech}, `

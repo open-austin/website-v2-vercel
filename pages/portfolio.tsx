@@ -1,6 +1,6 @@
-import ProjectCards from '../components/ProjectCards'
 import SearchBar from '../components/SearchBar'
 import { useState } from 'react'
+import Projects from '../components/projects'
 
 const Portfolio = () => {
   const [currentCategory, setCurrentCategory] = useState<Set<string>>(new Set())
@@ -12,7 +12,7 @@ const Portfolio = () => {
         setCurrentCategory={setCurrentCategory}
         setCurrentStatus={setCurrentStatus}
       />
-      <ProjectCards
+      <Projects
         currentCategory={currentCategory}
         currentStatus={currentStatus}
       />

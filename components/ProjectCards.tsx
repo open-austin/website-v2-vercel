@@ -1,68 +1,11 @@
-import { default as projectData } from '../data/project_data'
 import { Box, Badge, Image, Flex, Link, Text } from '@chakra-ui/react'
-import { useEffect, useState } from 'react'
+import { TProjects } from './projects'
 
-type Projects = Array<{
-  title: string
-  description: string
-  access_at?: string | null
-  project_at?: string | undefined | null
-  type: string
-  status: string
-  categories: Array<string>
-  contact: string | Array<string>
-  cfa_stage?: string
-  date: string
-  thumb?: string | null
-  stack?: Array<string>
-  published?: boolean
-  screenshot?: string
-  featured?: boolean
-  archived?: boolean
-  skipSize: number
-}>
-
-interface Props {
-  currentCategory: Set<string>
-  currentStatus: Set<string>
+type Props = {
+  projectList: TProjects[]
 }
 
-const ProjectCards = ({ currentCategory, currentStatus }: Props) => {
-  const [projects, setProjects] = useState<Projects>([])
-
-  useEffect(() => {
-    // Handles clearing multiselectors
-    if (currentCategory.size === 0 && currentStatus.size === 0) {
-      setProjects(projectData)
-    }
-    // Handles multiselectors
-    else {
-      const searchedProjects = projectData.filter((p) => {
-        let categories = new Set([...p.categories])
-        let superSet = new Set([...categories, ...currentCategory])
-        // Handles category search without statuses
-        if (
-          currentStatus.size === 0 &&
-          superSet.size < categories.size + currentCategory.size
-        ) {
-          return p
-        }
-        // Handles status search without categories
-        else if (currentCategory.size === 0 && currentStatus.has(p?.status)) {
-          return p
-        }
-        // Handles both status and category search
-        else if (
-          superSet.size < categories.size + currentCategory.size &&
-          currentStatus.has(p?.status)
-        ) {
-          return p
-        }
-      })
-      setProjects(searchedProjects)
-    }
-  }, [currentCategory, currentStatus])
-
+const ProjectCards = ({ projectList }: Props) => {
   return (
     <Flex
       justifyContent="space-between"
@@ -73,16 +16,16 @@ const ProjectCards = ({ currentCategory, currentStatus }: Props) => {
       w="50%"
       m="auto"
     >
-      {projects.map((data) => (
+      {projectList.map((project) => (
         <Box
           maxW="45%"
           borderWidth="1px"
           borderRadius="lg"
           overflow="hidden"
-          key={data.title}
+          key={project.title}
         >
           <Image
-            src={`/assets/images/projects/screenshots/${data.screenshot}`}
+            src={`/assets/images/projects/screenshots/${project.screenshot}`}
             fallbackSrc={'/assets/logo/OpenAustin_Symbol_FullColor.jpg'}
             alt=""
             objectFit="cover"
@@ -100,19 +43,19 @@ const ProjectCards = ({ currentCategory, currentStatus }: Props) => {
                 lineHeight="tight"
                 noOfLines={1}
               >
-                {data.title}
+                {project.title}
               </Box>
               <Box display="flex" alignItems="baseline">
                 <Badge borderRadius="full" px="2" colorScheme="teal">
-                  {data.status}
+                  {project.status}
                 </Badge>
               </Box>
             </Flex>
-            <Box>{data.description}</Box>
+            <Box>{project.description}</Box>
             <Flex flexDirection="row" justifyContent="start">
               <Text>Links: </Text>
               <Link
-                href={`${data.project_at}`}
+                href={`${project.project_at}`}
                 color="red"
                 paddingLeft="1%"
                 isExternal
@@ -121,7 +64,7 @@ const ProjectCards = ({ currentCategory, currentStatus }: Props) => {
               </Link>
               <Text>, </Text>
               <Link
-                href={`${data.access_at}`}
+                href={`${project.access_at}`}
                 color="red"
                 paddingLeft="1%"
                 isExternal
@@ -129,11 +72,11 @@ const ProjectCards = ({ currentCategory, currentStatus }: Props) => {
                 Project
               </Link>
             </Flex>
-            {data.stack && (
+            {project.stack && (
               <Box>
                 Technologies:{' '}
-                {data.stack?.map((tech, i) => {
-                  if (data.stack && i === data.stack.length - 1) {
+                {project.stack?.map((tech, i) => {
+                  if (project.stack && i === project.stack.length - 1) {
                     return tech
                   } else {
                     return `${tech}, `
@@ -143,8 +86,8 @@ const ProjectCards = ({ currentCategory, currentStatus }: Props) => {
             )}
             <Box>
               Categories:{' '}
-              {data.categories?.map((category, i) => {
-                if (i === data.categories.length - 1) {
+              {project.categories?.map((category, i) => {
+                if (i === project.categories.length - 1) {
                   return category
                 } else {
                   return `${category}, `

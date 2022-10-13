@@ -25,9 +25,10 @@ const ProjectCards = ({ projectList }: Props) => {
       {projectList.map((project) => (
         <Box
           maxW={{ base: '90%', md: '100%' }}
+          h="100%"
+          boxShadow="base"
           borderWidth="1px"
           borderRadius="lg"
-          overflow="hidden"
           key={project.title}
         >
           <Image
@@ -40,9 +41,9 @@ const ProjectCards = ({ projectList }: Props) => {
             <Flex
               flexDirection="row"
               justifyContent="space-between"
-              alignItems="center"
+              alignContent="center"
             >
-              <Box
+              <Text
                 mt="1"
                 fontWeight="semibold"
                 as="h4"
@@ -50,14 +51,17 @@ const ProjectCards = ({ projectList }: Props) => {
                 noOfLines={1}
               >
                 {project.title}
-              </Box>
-              <Box display="flex" alignItems="baseline">
-                <Badge borderRadius="full" px="2" colorScheme="teal">
-                  {project.status}
-                </Badge>
-              </Box>
+              </Text>
+              <Badge
+                borderRadius="full"
+                px="2"
+                colorScheme="teal"
+                alignSelf="center"
+              >
+                {project.status}
+              </Badge>
             </Flex>
-            <Box>{project.description}</Box>
+            <Text>{project.description}</Text>
             <Flex flexDirection="row" justifyContent="start">
               <Text>Links: </Text>
               <Link
@@ -66,7 +70,7 @@ const ProjectCards = ({ projectList }: Props) => {
                 paddingLeft="1%"
                 isExternal
               >
-                Github
+                <Text>Github</Text>
               </Link>
               <Text>, </Text>
               <Link
@@ -75,30 +79,34 @@ const ProjectCards = ({ projectList }: Props) => {
                 paddingLeft="1%"
                 isExternal
               >
-                Project
+                <Text>Project</Text>
               </Link>
             </Flex>
-            {project.stack && (
-              <Box>
-                Technologies:{' '}
-                {project.stack?.map((tech, i) => {
-                  if (project.stack && i === project.stack.length - 1) {
-                    return tech
+            <Box>
+              {project.stack && (
+                <Text>
+                  Technologies:{' '}
+                  {project.stack?.map((tech, i) => {
+                    if (project.stack && i === project.stack.length - 1) {
+                      return tech
+                    } else {
+                      return `${tech}, `
+                    }
+                  })}
+                </Text>
+              )}
+            </Box>
+            <Box>
+              <Text>
+                Categories:{' '}
+                {project.categories?.map((category, i) => {
+                  if (i === project.categories.length - 1) {
+                    return category
                   } else {
-                    return `${tech}, `
+                    return `${category}, `
                   }
                 })}
-              </Box>
-            )}
-            <Box>
-              Categories:{' '}
-              {project.categories?.map((category, i) => {
-                if (i === project.categories.length - 1) {
-                  return category
-                } else {
-                  return `${category}, `
-                }
-              })}
+              </Text>
             </Box>
           </Box>
         </Box>

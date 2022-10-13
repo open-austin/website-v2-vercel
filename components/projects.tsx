@@ -1,6 +1,6 @@
 import { default as projectData } from '../data/project_data'
 import { useEffect, useState } from 'react'
-import ProjectCards from './ProjectCards'
+import ProjectCards from './projectCards'
 
 export type TProjects = {
   title: string

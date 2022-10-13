@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from 'react'
 import { default as projectData } from '../data/project_data'
 import { MultiValue } from 'chakra-react-select'
-import SearchBar from './SearchBar'
+import SearchBar from './searchBar'
 
 const UNKNOWN_CATEGORY = 'unknown'
 

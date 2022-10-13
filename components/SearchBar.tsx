@@ -1,5 +1,6 @@
 import { Button, Grid, GridItem, Text } from '@chakra-ui/react'
 import { MultiValue, Select } from 'chakra-react-select'
+import { Link } from './link'
 import { SelectedMulti } from './search'
 
 interface Props {
@@ -34,7 +35,9 @@ const SearchBar = ({ selectionHandler, statuses, categories }: Props) => {
         alignSelf="center"
         justifySelf="end"
       >
-        <Button>Submit Your Pitch</Button>
+        <Link href="/collaborate-with-us">
+          <Button variant="primary">Submit Your Pitch</Button>
+        </Link>
       </GridItem>
       <GridItem gridColumn="1 / span 2" gridRow="2">
         <Select

@@ -1,3 +1,4 @@
+import { Flex } from '@chakra-ui/react'
 import { useState } from 'react'
 import Projects from '../components/projects'
 import Search from '../components/search'
@@ -7,7 +8,7 @@ const Portfolio = () => {
   const [currentStatus, setCurrentStatus] = useState<Set<string>>(new Set())
 
   return (
-    <>
+    <Flex flexDirection="column" alignItems="center" my="5%">
       <Search
         setCurrentCategory={setCurrentCategory}
         setCurrentStatus={setCurrentStatus}
@@ -16,7 +17,7 @@ const Portfolio = () => {
         currentCategory={currentCategory}
         currentStatus={currentStatus}
       />
-    </>
+    </Flex>
   )
 }
 

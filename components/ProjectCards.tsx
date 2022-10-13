@@ -13,12 +13,12 @@ const ProjectCards = ({ projectList }: Props) => {
       flexWrap="wrap"
       alignItems="start"
       gap="3"
-      w="50%"
-      m="auto"
+      w={{ base: '100%', md: '50%' }}
     >
       {projectList.map((project) => (
         <Box
-          maxW="45%"
+          maxW={{ base: '90%', md: '45%' }}
+          m={{ base: 'auto', md: '0' }}
           borderWidth="1px"
           borderRadius="lg"
           overflow="hidden"

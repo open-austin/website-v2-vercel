@@ -19,15 +19,15 @@ const SearchBar = ({ selectionHandler, statuses, categories }: Props) => {
   return (
     <Grid
       w={{ base: '90%', md: '50%' }}
-      m="auto"
       gap="2"
-      templateColumns={{ md: '1fr 1fr 1fr' }}
-      templateRows={{ base: '1fr 1fr 1fr 1fr' }}
+      templateColumns={{ base: '1fr', md: '1fr 1fr 1fr 1fr' }}
+      templateRows={{ base: '1fr 1fr 1fr 1fr', md: '1fr 1fr ' }}
     >
       <GridItem
         gridColumn={{ base: '1 / span -1', md: '1 / span 2' }}
         gridRow="1"
-        m={{ base: 'auto' }}
+        justifySelf={{ base: 'center', md: 'start' }}
+        alignSelf={{ base: 'center' }}
       >
         <Text fontSize="3xl">Current Projects</Text>
       </GridItem>
@@ -36,7 +36,10 @@ const SearchBar = ({ selectionHandler, statuses, categories }: Props) => {
         gridRow={{ base: '2', md: '1' }}
         alignSelf="center"
       >
-        <Flex alignItems="center" justifyContent="end">
+        <Flex
+          alignItems="center"
+          justifyContent={{ base: 'center', md: 'end' }}
+        >
           <Text fontSize="xl" mr="5%">
             Got an idea?
           </Text>
@@ -45,7 +48,10 @@ const SearchBar = ({ selectionHandler, statuses, categories }: Props) => {
           </Link>
         </Flex>
       </GridItem>
-      <GridItem gridColumn="1 / span 2" gridRow={{ base: '3', md: '2' }}>
+      <GridItem
+        gridColumn={{ base: '1 / span -1', md: '1 / span 2' }}
+        gridRow={{ base: '3', md: '2' }}
+      >
         <Select
           size="md"
           isMulti

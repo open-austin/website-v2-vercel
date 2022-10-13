@@ -1,4 +1,12 @@
-import { Box, Badge, Image, Flex, Link, Text } from '@chakra-ui/react'
+import {
+  Box,
+  Badge,
+  Image,
+  Flex,
+  Link,
+  Text,
+  SimpleGrid,
+} from '@chakra-ui/react'
 import { TProjects } from './projects'
 
 type Props = {
@@ -7,18 +15,16 @@ type Props = {
 
 const ProjectCards = ({ projectList }: Props) => {
   return (
-    <Flex
-      justifyContent="space-between"
-      flexDirection="row"
-      flexWrap="wrap"
-      alignItems="start"
-      gap="3"
+    <SimpleGrid
+      minChildWidth={{ md: '45%' }}
       w={{ base: '100%', md: '50%' }}
+      mt={{ base: '5%', md: '2%' }}
+      justifyItems={{ base: 'center' }}
+      spacing="1%"
     >
       {projectList.map((project) => (
         <Box
-          maxW={{ base: '90%', md: '45%' }}
-          m={{ base: 'auto', md: '0' }}
+          maxW={{ base: '90%', md: '100%' }}
           borderWidth="1px"
           borderRadius="lg"
           overflow="hidden"
@@ -97,7 +103,7 @@ const ProjectCards = ({ projectList }: Props) => {
           </Box>
         </Box>
       ))}
-    </Flex>
+    </SimpleGrid>
   )
 }
 

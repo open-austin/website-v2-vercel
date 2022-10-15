@@ -7,13 +7,13 @@ import {
   Text,
   SimpleGrid,
 } from '@chakra-ui/react'
-import { TProjects } from './projects'
+import { Projects } from '../types/Projects'
 
-type Props = {
-  projectList: TProjects[]
+type ProjectCardsProps = {
+  projectList: Projects[]
 }
 
-const ProjectCards = ({ projectList }: Props) => {
+const ProjectCards = ({ projectList }: ProjectCardsProps) => {
   return (
     <SimpleGrid
       minChildWidth={{ md: '45%' }}

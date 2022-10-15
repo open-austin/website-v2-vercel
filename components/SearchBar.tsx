@@ -1,7 +1,7 @@
 import { Button, Flex, Grid, GridItem, Text } from '@chakra-ui/react'
 import { MultiValue, Select } from 'chakra-react-select'
 import { Link } from './link'
-import { SelectedMulti } from './search'
+import { SelectedMulti } from './Search'
 
 interface Props {
   categories: SelectedMulti

@@ -1,7 +1,7 @@
 import { Flex } from '@chakra-ui/react'
 import { useEffect, useState } from 'react'
 import ProjectCards from '../components/ProjectCards'
-import Search from '../components/search'
+import Search from '../components/Search'
 
 import { default as projectData } from '../data/project_data'
 import { Projects } from '../types/Projects'

@@ -4,7 +4,7 @@ import ProjectCards from '../components/ProjectCards'
 import Search from '../components/Search'
 
 import { default as projectData } from '../data/project_data'
-import { Projects } from '../types/Projects'
+import { Projects } from '../types'
 
 const Portfolio = () => {
   const [currentCategory, setCurrentCategory] = useState<Set<string>>(new Set())

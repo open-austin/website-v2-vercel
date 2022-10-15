@@ -24,6 +24,7 @@ import {
 import DonateButton from './donateButton'
 import DarkModeSwitch from './darkModeSwitch'
 import { Link as NextLink } from './link'
+import { NavItem } from '../types'
 
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure()
@@ -262,15 +263,6 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
       </Collapse>
     </Stack>
   )
-}
-
-type NavItem = {
-  label: string
-  subLabel?: string
-  children?: Array<NavItem>
-  href?: string
-  external?: boolean
-  wip?: boolean
 }
 
 const NAV_ITEMS: ReadonlyArray<NavItem> = [

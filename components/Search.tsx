@@ -2,15 +2,9 @@ import { useEffect, useState, useRef } from 'react'
 import { default as projectData } from '../data/project_data'
 import { MultiValue } from 'chakra-react-select'
 import SearchBar from './SearchBar'
+import { SearchProps, SelectedMulti } from '../types'
 
 const UNKNOWN_CATEGORY = 'unknown'
-
-export type SelectedMulti = Array<{ value: string; label: string }>
-
-interface Props {
-  setCurrentCategory: (currentCategory: Set<string>) => void
-  setCurrentStatus: (currentStatus: Set<string>) => void
-}
 
 const useSearchBar = () => {
   const [categories, setCategories] = useState<SelectedMulti>([])
@@ -40,7 +34,7 @@ const useSearchBar = () => {
   }
 }
 
-const Search = ({ setCurrentCategory, setCurrentStatus }: Props) => {
+const Search = ({ setCurrentCategory, setCurrentStatus }: SearchProps) => {
   const { categories, statuses } = useSearchBar()
 
   const selectionHandler = (

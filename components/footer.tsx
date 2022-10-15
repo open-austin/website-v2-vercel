@@ -13,16 +13,8 @@ import {
 import { ReactNode } from 'react'
 import { FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa'
 import { BiMailSend } from 'react-icons/bi'
-import { Link, LinkProps } from './link'
-
-type SocialLink = LinkProps & {
-  label: string
-}
-
-type FooterItems = SocialLink & {
-  key: string
-  icon?: ReactNode
-}
+import { Link } from './link'
+import { FooterItems, LinkProps, SocialLink } from '../types'
 
 const SocialLink = ({ children, label, href }: SocialLink) => {
   return (

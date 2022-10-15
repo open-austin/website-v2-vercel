@@ -7,11 +7,7 @@ import {
   Text,
   SimpleGrid,
 } from '@chakra-ui/react'
-import { Projects } from '../types/Projects'
-
-type ProjectCardsProps = {
-  projectList: Projects[]
-}
+import { ProjectCardsProps } from '../types'
 
 const ProjectCards = ({ projectList }: ProjectCardsProps) => {
   return (

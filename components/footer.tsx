@@ -104,7 +104,13 @@ export default function LargeWithNewsletter() {
         >
           <Stack spacing={6} gridColumn={{ base: '1 / -1', md: '1' }}>
             <Box alignSelf="center">
-              <Image priority src={'/assets/logo.svg'} width={60} height={60} />
+              <Image
+                alt="Open Austin's logo; a five-pointed star in orange and black"
+                priority
+                src={'/assets/logo.svg'}
+                width={60}
+                height={60}
+              />
             </Box>
             <Text fontSize={'sm'} alignSelf="center">
               © 2022 Open Austin. All rights reserved

@@ -8,7 +8,6 @@ import {
   Text,
   VStack,
   useBreakpointValue,
-  useColorModeValue,
   Heading,
 } from '@chakra-ui/react'
 import { Link } from './link'

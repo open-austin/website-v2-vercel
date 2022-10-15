@@ -57,7 +57,13 @@ export default function WithSubnavigation() {
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
           <Link href="/">
-            <Image priority src={'/assets/logo.svg'} width={60} height={60} />
+            <Image
+              alt="Open Austin's logo; a five-pointed star in orange and black"
+              priority
+              src={'/assets/logo.svg'}
+              width={60}
+              height={60}
+            />
           </Link>
           <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
             <DesktopNav />
@@ -275,7 +281,6 @@ const NAV_ITEMS: ReadonlyArray<NavItem> = [
         label: 'Portfolio',
         subLabel: 'Current and completed projects',
         href: '/portfolio',
-        wip: true,
       },
       {
         label: 'How to get involved',

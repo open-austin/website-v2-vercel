@@ -34,8 +34,8 @@ const ProjectCards = ({ projectList }: ProjectCardsProps) => {
           <Image
             src={`/assets/images/projects/screenshots/${project.screenshot}`}
             fallbackSrc={'/assets/logo/OpenAustin_Symbol_FullColor.jpg'}
-            // @TODO
-            alt="TODO: add alt text for these images"
+            // @TODO: add alt text for these images
+            alt=""
             objectFit="cover"
           />
           <Box p="6">

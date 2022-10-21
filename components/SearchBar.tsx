@@ -1,21 +1,13 @@
 import { Button, Flex, Grid, GridItem, Text } from '@chakra-ui/react'
-import { MultiValue, Select } from 'chakra-react-select'
+import { Select } from 'chakra-react-select'
 import { Link } from './link'
-import { SelectedMulti } from './Search'
+import { SearchBarProps } from '../types'
 
-interface Props {
-  categories: SelectedMulti
-  statuses: SelectedMulti
-  selectionHandler: (
-    selection: MultiValue<{
-      value: string
-      label: string
-    }>,
-    selector: string
-  ) => void
-}
-
-const SearchBar = ({ selectionHandler, statuses, categories }: Props) => {
+const SearchBar = ({
+  selectionHandler,
+  statuses,
+  categories,
+}: SearchBarProps) => {
   return (
     <Grid
       w={{ base: '90%', md: '50%' }}

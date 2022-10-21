@@ -2,40 +2,46 @@ import { useEffect, useState, useRef } from 'react'
 import { default as projectData } from '../data/project_data'
 import { MultiValue } from 'chakra-react-select'
 import SearchBar from './SearchBar'
-import { SearchProps, SelectedMulti } from '../types'
+import { useSearchBar } from './useSearchBar'
+import { SearchProps } from '../types'
 
-const UNKNOWN_CATEGORY = 'unknown'
-
-const useSearchBar = () => {
-  const [categories, setCategories] = useState<SelectedMulti>([])
-  const [statuses, setStatuses] = useState<SelectedMulti>([])
-  const isMounted = useRef(true)
+const Search = ({ setProjectList }: SearchProps) => {
+  const [currentCategory, setCurrentCategory] = useState<Set<string>>(new Set())
+  const [currentStatus, setCurrentStatus] = useState<Set<string>>(new Set())
+  const { categories, statuses } = useSearchBar(projectData)
 
   useEffect(() => {
-    if (isMounted.current) {
-      const cats = Array.from(
-        new Set(projectData.flatMap((p) => p.categories))
-      ).map((label) => ({ value: label, label }))
-
-      setCategories(cats)
-
-      const stats = Array.from(
-        new Set(projectData.flatMap((p) => p.status || UNKNOWN_CATEGORY))
-      ).map((label) => ({ value: label, label }))
-
-      setStatuses(stats)
-      isMounted.current = false
+    // Handles clearing multiselectors
+    if (currentCategory.size === 0 && currentStatus.size === 0) {
+      setProjectList(projectData)
     }
-  }, [])
-
-  return {
-    categories,
-    statuses,
-  }
-}
-
-const Search = ({ setCurrentCategory, setCurrentStatus }: SearchProps) => {
-  const { categories, statuses } = useSearchBar()
+    // Handles multiselectors
+    else {
+      const searchedProjects = projectData.filter((p) => {
+        let categories = new Set([...p.categories])
+        let superSet = new Set([...categories, ...currentCategory])
+        // Handles category search without statuses
+        if (
+          currentStatus.size === 0 &&
+          superSet.size < categories.size + currentCategory.size
+        ) {
+          return p
+        }
+        // Handles status search without categories
+        else if (currentCategory.size === 0 && currentStatus.has(p?.status)) {
+          return p
+        }
+        // Handles both status and category search
+        else if (
+          superSet.size < categories.size + currentCategory.size &&
+          currentStatus.has(p?.status)
+        ) {
+          return p
+        }
+      })
+      setProjectList(searchedProjects)
+    }
+  }, [currentCategory, currentStatus])
 
   const selectionHandler = (
     selection: MultiValue<{

@@ -1,11 +1,11 @@
 import { Button, Flex, Grid, GridItem, Text } from '@chakra-ui/react'
 import { MultiValue, Select } from 'chakra-react-select'
 import { Link } from './link'
-import { SelectedMulti } from './Search'
+import { Labels } from './Search'
 
 interface Props {
-  categories: SelectedMulti
-  statuses: SelectedMulti
+  categories: Labels
+  statuses: Labels
   selectionHandler: (
     selection: MultiValue<{
       value: string

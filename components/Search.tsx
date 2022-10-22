@@ -39,7 +39,7 @@ const Search = ({ setProjectList }: Props) => {
           currentCategory.includes(a)
         )
 
-        // This is the trickest part.
+        // Filter for status only or categories only else filter for both.
         if (currentCategory.length === 0) {
           return statusMatch
         }

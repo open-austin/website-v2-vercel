@@ -1,5 +1,5 @@
 // Missing "Tenant File App", "Visualizing Vulnerable Communities in Austin", "Runoff Rally"
-const data = [
+export const data = [
   {
     title: 'Vax.Codes',
     description:
@@ -121,5 +121,3 @@ const data = [
     skipSize: 496,
   },
 ]
-
-export default data

@@ -1,4 +1,5 @@
 // Setup for Chakra and Next environments
+import '@fontsource/crimson-text'
 
 import type { AppProps } from 'next/app'
 

@@ -6,13 +6,10 @@ import {
   Stack,
   Text,
   VisuallyHidden,
-  Input,
-  IconButton,
   useColorModeValue,
 } from '@chakra-ui/react'
 import { ReactNode } from 'react'
-import { FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa'
-import { BiMailSend } from 'react-icons/bi'
+import { FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa'
 import { Link, LinkProps } from './link'
 
 type SocialLink = LinkProps & {
@@ -47,9 +44,7 @@ const ListLink = ({ children, href }: LinkProps) => {
 
 const FOOTER_ITEMS_COMPANY: ReadonlyArray<FooterItems> = [
   { href: '#', label: 'About', key: 'About' },
-  { href: '#', label: 'Blog', key: 'Blog' },
   { href: '#', label: 'Contact us', key: 'Contact-Us' },
-  { href: '#', label: 'Testimonials', key: 'Testimonials' },
 ]
 
 const FOOTER_ITEMS_SUPPORT: ReadonlyArray<FooterItems> = [
@@ -58,9 +53,6 @@ const FOOTER_ITEMS_SUPPORT: ReadonlyArray<FooterItems> = [
     label: 'Donate',
     key: 'donate',
   },
-  { href: '#', label: 'Help', key: 'Help' },
-  { href: '#', label: 'Legal', key: 'Legal' },
-  { href: '#', label: 'Privacy Policy', key: 'Privacy-Policy' },
 ]
 
 const SOCIAL_ITEMS: ReadonlyArray<FooterItems> = [
@@ -75,12 +67,6 @@ const SOCIAL_ITEMS: ReadonlyArray<FooterItems> = [
     href: 'https://www.youtube.com/channel/UCSDcLeHsq8k-WLaJaRQHh4w',
     icon: <FaYoutube />,
     key: 'youtube',
-  },
-  {
-    label: 'Instagram',
-    href: '#',
-    icon: <FaInstagram />,
-    key: 'instagram',
   },
   {
     label: 'LinkedIn',
@@ -138,31 +124,6 @@ export default function LargeWithNewsletter() {
                 {link.label}
               </ListLink>
             ))}
-          </Stack>
-          <Stack
-            align={{ base: 'center', lg: 'flex-start' }}
-            gridColumn={{ base: '1 / -1', md: '4 / -1' }}
-          >
-            <ListHeader>Stay up to date</ListHeader>
-            <Stack direction={'row'}>
-              <Input
-                placeholder={'Your email address'}
-                bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
-                border={0}
-                _focus={{
-                  bg: 'whiteAlpha.300',
-                }}
-              />
-              <IconButton
-                bg={useColorModeValue('#EA6036', '#F2884B')}
-                color={useColorModeValue('white', 'gray.800')}
-                _hover={{
-                  bg: useColorModeValue('#C83E2F', '#FFFFFF'),
-                }}
-                aria-label="Subscribe"
-                icon={<BiMailSend />}
-              />
-            </Stack>
           </Stack>
         </SimpleGrid>
       </Container>

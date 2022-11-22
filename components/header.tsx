@@ -249,14 +249,17 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
         >
           {children &&
             children.map((child) => (
-              <NextLink
-                href={child.href}
-                key={child.label}
-                py={2}
-                isExternal={child.external}
-              >
-                {child.label}
-              </NextLink>
+              <div key={child.label}>
+                <NextLink href={child.href} isExternal={child.external}>
+                  {child.label}
+                </NextLink>
+
+                {child.wip && (
+                  <Badge ml="1" colorScheme="green">
+                    Coming Soon
+                  </Badge>
+                )}
+              </div>
             ))}
         </Stack>
       </Collapse>

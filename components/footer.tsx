@@ -44,7 +44,11 @@ const ListLink = ({ children, href }: LinkProps) => {
 
 const FOOTER_ITEMS_COMPANY: ReadonlyArray<FooterItems> = [
   { href: '#', label: 'About', key: 'About' },
-  { href: '#', label: 'Contact us', key: 'Contact-Us' },
+  {
+    href: 'mailto:info@open-austin.org',
+    label: 'Contact us',
+    key: 'Contact-Us',
+  },
 ]
 
 const FOOTER_ITEMS_SUPPORT: ReadonlyArray<FooterItems> = [

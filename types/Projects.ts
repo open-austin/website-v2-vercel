@@ -17,3 +17,5 @@ export type Project = {
   archived?: boolean
   skipSize: number
 }
+
+export type ProjectListProp = { projects: Project[] }

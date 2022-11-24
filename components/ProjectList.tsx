@@ -1,20 +1,20 @@
-import { SimpleGrid } from '@chakra-ui/react'
 import { projectData } from '../data/project_data'
-import ProjectCard from './ProjectCard'
+import CompletedProjectList from './completedProjectList'
+import WipProjectList from './wipProjectList'
 
 const ProjectList = () => {
+  const completedProjects = projectData.filter((p) => {
+    if (p.status === 'deployed') return p
+  })
+  const wipProjects = projectData.filter((p) => {
+    if (p.status !== 'deployed') return p
+  })
+
   return (
-    <SimpleGrid
-      minChildWidth={{ md: '45%' }}
-      w={{ base: '100%', md: '50%' }}
-      mt={{ base: '5%', md: '2%' }}
-      justifyItems={{ base: 'center' }}
-      spacing="1%"
-    >
-      {projectData.map((project) => (
-        <ProjectCard project={project} key={project.title} />
-      ))}
-    </SimpleGrid>
+    <>
+      <WipProjectList projects={wipProjects} />
+      <CompletedProjectList projects={completedProjects} />
+    </>
   )
 }
 

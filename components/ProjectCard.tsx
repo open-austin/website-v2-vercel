@@ -1,9 +1,8 @@
-import { Box, Badge, Image, Flex, Text } from '@chakra-ui/react'
-import Link from 'next/link'
+import { Box, Badge, Image, Flex, Text, Link } from '@chakra-ui/react'
 import React from 'react'
 import { Project } from '../types/Projects'
 
-type ProjectProp = {
+export type ProjectProp = {
   project: Project
 }
 
@@ -39,14 +38,14 @@ function ProjectCard({ project }: ProjectProp) {
           >
             {project.title}
           </Text>
-          <Badge
+          {/* <Badge
             borderRadius="full"
             px="2"
             colorScheme="teal"
             alignSelf="center"
           >
             {project.status}
-          </Badge>
+          </Badge> */}
         </Flex>
         <Text>{project.description}</Text>
         <Flex flexDirection="row" justifyContent="start">
@@ -73,7 +72,7 @@ function ProjectCard({ project }: ProjectProp) {
           {project.stack && (
             <Text>
               Technologies:{' '}
-              {project.stack?.map((tech: Array<string>, i: number) => {
+              {project.stack?.map((tech, i) => {
                 if (project.stack && i === project.stack.length - 1) {
                   return tech
                 } else {
@@ -86,7 +85,7 @@ function ProjectCard({ project }: ProjectProp) {
         <Box>
           <Text>
             Categories:{' '}
-            {project.categories?.map((category: Array<string>, i: number) => {
+            {project.categories?.map((category, i) => {
               if (i === project.categories.length - 1) {
                 return category
               } else {

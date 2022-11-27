@@ -1,4 +1,4 @@
-export type Projects = {
+export type Project = {
   title: string
   description: string
   access_at?: string | null
@@ -17,3 +17,5 @@ export type Projects = {
   archived?: boolean
   skipSize: number
 }
+
+export type ProjectListProp = { projects: Project[] }

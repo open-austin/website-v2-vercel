@@ -1,5 +1,4 @@
-// Missing "Tenant File App", "Visualizing Vulnerable Communities in Austin", "Runoff Rally"
-export const data = [
+export const projectData = [
   {
     title: 'Runoff Rally',
     description:

@@ -2,7 +2,7 @@ import { Button, Flex, Heading, Text } from '@chakra-ui/react'
 
 import { Link } from './link'
 
-const SearchBar = () => {
+const ProjectHeader = () => {
   return (
     <Flex
       flexDirection={{ base: 'column' }}
@@ -21,4 +21,4 @@ const SearchBar = () => {
   )
 }
 
-export default SearchBar
+export default ProjectHeader

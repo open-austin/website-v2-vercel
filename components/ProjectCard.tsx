@@ -10,7 +10,7 @@ function ProjectCard({ project }: ProjectProp) {
   return (
     <Box
       maxW={{ base: '90%', md: '100%' }}
-      h="100%"
+      maxH="100%"
       boxShadow="base"
       borderWidth="1px"
       borderRadius="lg"

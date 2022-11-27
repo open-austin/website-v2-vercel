@@ -1,4 +1,4 @@
-import { Flex } from '@chakra-ui/react'
+import { Container, Flex } from '@chakra-ui/react'
 import ProjectList from '../components/ProjectList'
 import Search from '../components/Search'
 

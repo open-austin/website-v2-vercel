@@ -140,6 +140,11 @@ const components = {
         fontSize: fontSizes['3xl'],
         pt: 8,
       },
+      projectSection: {
+        fontSize: fontSizes['3xl'],
+        pt: 8,
+        marginTop: '5%',
+      },
       credits: {
         fontSize: fontSizes['3xl'],
         pb: 2,

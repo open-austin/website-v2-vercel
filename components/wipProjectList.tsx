@@ -1,4 +1,4 @@
-import { SimpleGrid, Text } from '@chakra-ui/react'
+import { Heading, SimpleGrid, Text } from '@chakra-ui/react'
 import React from 'react'
 import ProjectCard from './ProjectCard'
 import { ProjectListProp } from '../types/Projects'
@@ -6,7 +6,7 @@ import { ProjectListProp } from '../types/Projects'
 function WipProjectList({ projects }: ProjectListProp) {
   return (
     <>
-      <Text>Work in Progress</Text>
+      <Heading variant="projectSection">Works in Progress</Heading>
       <SimpleGrid
         minChildWidth={{ md: '45%' }}
         w={{ base: '100%', md: '50%' }}

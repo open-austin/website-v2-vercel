@@ -1,3 +1,4 @@
+import { Container } from '@chakra-ui/react'
 import { projectData } from '../data/project_data'
 import CompletedProjectList from './completedProjectList'
 import WipProjectList from './wipProjectList'

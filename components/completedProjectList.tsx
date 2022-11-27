@@ -1,13 +1,13 @@
 import React from 'react'
 import ProjectCard from './ProjectCard'
-import { SimpleGrid, Text, Link } from '@chakra-ui/react'
+import { SimpleGrid, Text, Link, Heading, Box, Flex } from '@chakra-ui/react'
 import { ProjectListProp } from '../types/Projects'
 
 function CompletedProjectList({ projects }: ProjectListProp) {
   return (
     <>
-      <Text>Completed Work</Text>
-      <Text>
+      <Heading variant="projectSection">Completed Works</Heading>
+      <Text maxW={{ base: '90%', md: '100%' }} style={{ textAlign: 'center' }}>
         Here are a few of our complete work. For all of our projects visit our
         <Link> Github</Link>.
       </Text>

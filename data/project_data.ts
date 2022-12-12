@@ -171,7 +171,7 @@ export const projectData = [
     skipSize: 496,
   },
   {
-    title: 'Indigent Court Stats',
+    title: 'Indigent Defense Statistics',
     description: 'As an indigent defense advocate, I want to collect data about the public defender process/system so that I can perform evidence-based advocacy for systems change.',
     access_at: null,
     project_at: 'https://github.com/open-austin/indigent-defense-stats',
@@ -181,9 +181,9 @@ export const projectData = [
     contact: ['Dan Minshew', '@newswim'],
     date: '2019-03-14T00:00:00.000Z',
     thumb: null,
-    screenshot: 'ballotapi.jpg',
+    screenshot: null,
     featured: false,
-    stack: ['Python', 'Jekyll', 'PostgreSQL'],
+    stack: ['Python', 'R', 'Azure Functions', `TypeScript`, `React`, `D3`],
     skipSize: 496,
   },
 ]

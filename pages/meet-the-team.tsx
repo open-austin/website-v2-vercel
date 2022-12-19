@@ -65,7 +65,11 @@ const MeetTheTeam = () => {
               </Link>{' '}
               – Secretary
             </ListItem>
-            <ListItem>Aaron Renaud – At-large Member</ListItem>
+            <ListItem>
+              <Link href="https://www.linkedin.com/in/aaronrenaud/" isExternal>
+                Aaron Renaud
+              </Link>{' '}
+              – At-large Member</ListItem>
             <ListItem>
               <Link href="https://github.com/newswim" isExternal>
                 Dan Minshew

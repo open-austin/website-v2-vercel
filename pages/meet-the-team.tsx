@@ -77,6 +77,8 @@ const MeetTheTeam = () => {
             Our advisory council consists of:
           </Text>
           <UnorderedList layerStyle={'list'}>
+            <ListItem>Jae Kwon</ListItem>
+            <ListItem>Daniel Roesler</ListItem>
             <ListItem>Mateo Clarke</ListItem>
           </UnorderedList>
         </Box>

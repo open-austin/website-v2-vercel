@@ -1,12 +1,15 @@
-// Setup for Chakra and Next environments
+// Importing fonts (there's probably a better way to do this...)
 import '@fontsource/crimson-text'
 
-import type { AppProps } from 'next/app'
-
+// Setup for Chakra and Next environments
 import { ChakraProvider } from '@chakra-ui/react'
+import { Analytics } from '@vercel/analytics/react'
+
+import { type AppProps } from 'next/app'
+import Head from 'next/head'
+
 import { theme } from '../lib/theme'
 import Header from '../components/header'
-import Head from 'next/head'
 import Footer from '../components/footer'
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -21,6 +24,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
+      <Analytics />
       <Component {...pageProps} />
       <Footer />
     </ChakraProvider>

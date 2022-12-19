@@ -17,7 +17,7 @@ function ProjectCard({ project }: ProjectProp) {
       key={project.title}
     >
       <Image
-        src={`/assets/images/projects/screenshots/${project.screenshot}`}
+        src={`/assets/${project.screenshot}`}
         fallbackSrc={'/assets/logo/OpenAustin_Symbol_FullColor.jpg'}
         // @TODO: add alt text for these images
         alt=""

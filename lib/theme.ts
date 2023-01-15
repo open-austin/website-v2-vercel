@@ -143,7 +143,6 @@ const components = {
       projectSection: {
         fontSize: fontSizes['3xl'],
         pt: 8,
-        marginTop: '5%',
       },
       credits: {
         fontSize: fontSizes['3xl'],
@@ -154,18 +153,6 @@ const components = {
   Text: {
     baseStyle: {
       fontSize: fontSizes['xl'],
-    },
-    variants: {
-      // footer link header
-      flh: {
-        fontWeight: '500',
-        fontSize: 'lg',
-        mb: 2,
-      },
-      // footer list link
-      fll: {
-        fontSize: fontSizes['md'],
-      },
     },
   },
 }

@@ -7,7 +7,7 @@ const ProjectHeader = () => {
       flexDirection={{ base: 'column' }}
       alignItems={{ base: 'center' }}
       justifyContent={{ base: 'space-around' }}
-      height={{ base: '10rem' }}
+      gap={4}
     >
       <Heading variant="title">Projects</Heading>
       <Text style={{ textAlign: 'center' }} fontSize="xl">

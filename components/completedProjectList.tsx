@@ -6,14 +6,16 @@ import { ProjectListProp } from '../types/Projects'
 function CompletedProjectList({ projects }: ProjectListProp) {
   return (
     <>
-      <Heading variant="projectSection">Completed Works</Heading>
+      <Heading as="h2" size="xl" mt={10}>
+        Completed Works
+      </Heading>
       <Text maxW={{ base: '90%', md: '100%' }} style={{ textAlign: 'center' }}>
         Here are a few of our complete work. For all of our projects visit our
         <Link> Github Page</Link>.
       </Text>
       <SimpleGrid
         minChildWidth={{ md: '45%' }}
-        w={{ base: '100%', md: '50%' }}
+        w={{ base: '100%', md: '80%' }}
         mt={{ base: '5%', md: '2%' }}
         justifyItems={{ base: 'center' }}
         spacing="1%"

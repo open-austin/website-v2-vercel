@@ -6,13 +6,15 @@ import { ProjectListProp } from '../types/Projects'
 function WipProjectList({ projects }: ProjectListProp) {
   return (
     <>
-      <Heading variant="projectSection">Works in Progress</Heading>
+      <Heading as="h2" size="xl" mt={10}>
+        Works in Progress
+      </Heading>
       <SimpleGrid
         minChildWidth={{ md: '45%' }}
-        w={{ base: '100%', md: '50%' }}
+        w={{ base: 'full', md: '80%' }}
         mt={{ base: '5%', md: '2%' }}
         justifyItems={{ base: 'center' }}
-        spacing="1%"
+        spacing={4}
       >
         {projects.map((project) => (
           <ProjectCard project={project} key={project.title} />

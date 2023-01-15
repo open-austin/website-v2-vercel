@@ -25,7 +25,7 @@ type FooterItems = SocialLink & {
 
 const SocialLink = ({ children, label, href }: SocialLink) => {
   return (
-    <Link href={href} variant="socialLink">
+    <Link href={href} variant="socialLink" fontSize={'1.5em'}>
       <VisuallyHidden>{label}</VisuallyHidden>
       {children}
     </Link>
@@ -39,7 +39,7 @@ const ListHeader = ({ children }: { children: ReactNode }) => {
 const ListLink = ({ children, href }: LinkProps) => {
   return (
     <Link href={href}>
-      <Text variant="fll">{children}</Text>
+      <Text>{children}</Text>
     </Link>
   )
 }

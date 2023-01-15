@@ -7,9 +7,11 @@ import {
   Text,
   VisuallyHidden,
   useColorModeValue,
+  useBreakpointValue,
+  Heading,
 } from '@chakra-ui/react'
 import { ReactNode } from 'react'
-import { FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa'
 import { Link, LinkProps } from './link'
 
 type SocialLink = LinkProps & {
@@ -31,7 +33,7 @@ const SocialLink = ({ children, label, href }: SocialLink) => {
 }
 
 const ListHeader = ({ children }: { children: ReactNode }) => {
-  return <Text variant="flh">{children}</Text>
+  return <Heading as="h2">{children}</Heading>
 }
 
 const ListLink = ({ children, href }: LinkProps) => {
@@ -43,7 +45,8 @@ const ListLink = ({ children, href }: LinkProps) => {
 }
 
 const FOOTER_ITEMS_COMPANY: ReadonlyArray<FooterItems> = [
-  { href: '#', label: 'About', key: 'About' },
+  { href: 'about', label: 'About', key: 'About' },
+  { href: 'portfolio', label: 'Portfolio', key: 'Portfolio' },
   {
     href: 'mailto:info@open-austin.org',
     label: 'Contact us',
@@ -54,8 +57,13 @@ const FOOTER_ITEMS_COMPANY: ReadonlyArray<FooterItems> = [
 const FOOTER_ITEMS_SUPPORT: ReadonlyArray<FooterItems> = [
   {
     href: 'https://opencollective.com/open-austin',
-    label: 'Donate',
-    key: 'donate',
+    label: 'Open Collective',
+    key: 'oc',
+  },
+  {
+    href: 'https://github.com/sponsors/open-austin',
+    label: 'GitHub Sponsor',
+    key: 'github',
   },
 ]
 
@@ -78,6 +86,12 @@ const SOCIAL_ITEMS: ReadonlyArray<FooterItems> = [
     icon: <FaLinkedin />,
     key: 'linkedin',
   },
+  {
+    label: 'GitHub',
+    href: 'https://github.com/open-austin',
+    icon: <FaGithub />,
+    key: 'github',
+  },
 ]
 
 export default function LargeWithNewsletter() {
@@ -86,13 +100,37 @@ export default function LargeWithNewsletter() {
       bg={useColorModeValue('gray.50', 'gray.900')}
       color={useColorModeValue('gray.700', 'gray.200')}
     >
-      <Container as={Stack} maxW={'6xl'} py={10}>
+      <Container
+        as={Stack}
+        maxW={'6xl'}
+        py={useBreakpointValue({ base: 4, md: 10 })}
+      >
         <SimpleGrid
-          templateColumns={{ base: '1fr 1fr', md: '2fr 1fr 1fr 2fr' }}
-          templateRows={{ base: '1fr 1fr 1fr', md: '1fr' }}
+          templateColumns={{ base: '1fr 1fr', md: '2fr 1fr 1fr' }}
+          templateRows={{ base: '1fr 1fr', md: '1fr' }}
           spacing={8}
         >
-          <Stack spacing={6} gridColumn={{ base: '1 / -1', md: '1' }}>
+          <Stack order={useBreakpointValue({ base: 1, md: 2 })}>
+            <ListHeader>More Info</ListHeader>
+            {FOOTER_ITEMS_COMPANY.map((link) => (
+              <ListLink href={link.href} key={link.key}>
+                {link.label}
+              </ListLink>
+            ))}
+          </Stack>
+          <Stack order={useBreakpointValue({ base: 2, md: 3 })}>
+            <ListHeader>Support</ListHeader>
+            {FOOTER_ITEMS_SUPPORT.map((link) => (
+              <ListLink href={link.href} key={link.key}>
+                {link.label}
+              </ListLink>
+            ))}
+          </Stack>
+          <Stack
+            spacing={6}
+            gridColumn={{ base: '1 / -1', md: '1' }}
+            order={useBreakpointValue({ base: 3, md: 1 })}
+          >
             <Box alignSelf="center">
               <Image
                 alt="Open Austin's logo; a five-pointed star in orange and black"
@@ -112,22 +150,6 @@ export default function LargeWithNewsletter() {
                 </SocialLink>
               ))}
             </Stack>
-          </Stack>
-          <Stack>
-            <ListHeader>Company</ListHeader>
-            {FOOTER_ITEMS_COMPANY.map((link) => (
-              <ListLink href={link.href} key={link.key}>
-                {link.label}
-              </ListLink>
-            ))}
-          </Stack>
-          <Stack>
-            <ListHeader>Support</ListHeader>
-            {FOOTER_ITEMS_SUPPORT.map((link) => (
-              <ListLink href={link.href} key={link.key}>
-                {link.label}
-              </ListLink>
-            ))}
           </Stack>
         </SimpleGrid>
       </Container>

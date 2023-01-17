@@ -1,5 +1,6 @@
-import { Box, Badge, Image, Flex, Text, Link } from '@chakra-ui/react'
 import React from 'react'
+import Image from 'next/image'
+import { Box, Badge, Flex, Text, Link } from '@chakra-ui/react'
 import { Project } from '../types/Projects'
 
 export type ProjectProp = {
@@ -10,19 +11,23 @@ function ProjectCard({ project }: ProjectProp) {
   return (
     <Box
       maxW={{ base: '90%', md: '100%' }}
-      maxH="100%"
       boxShadow="base"
       borderWidth="1px"
       borderRadius="lg"
       key={project.title}
     >
-      <Image
-        src={`/assets/${project.screenshot}`}
-        fallbackSrc={'/assets/logo/OpenAustin_Symbol_FullColor.jpg'}
-        // @TODO: add alt text for these images
-        alt=""
-        objectFit="cover"
-      />
+      {project.screenshot !== '' && (
+        <Image
+          src={`/assets/${project.screenshot}`}
+          height={300}
+          width={450}
+          objectFit="cover"
+          quality={90}
+          // @TODO: add alt text for these images
+          alt={project.description}
+        />
+      )}
+
       <Box p="6">
         <Flex
           flexDirection="row"
@@ -38,14 +43,6 @@ function ProjectCard({ project }: ProjectProp) {
           >
             {project.title}
           </Text>
-          {/* <Badge
-            borderRadius="full"
-            px="2"
-            colorScheme="teal"
-            alignSelf="center"
-          >
-            {project.status}
-          </Badge> */}
         </Flex>
         <Text>{project.description}</Text>
         <Flex flexDirection="row" justifyContent="start">
@@ -94,6 +91,9 @@ function ProjectCard({ project }: ProjectProp) {
             })}
           </Text>
         </Box>
+        <Badge borderRadius="full" px="2" colorScheme="teal" alignSelf="center">
+          {project.status}
+        </Badge>
       </Box>
     </Box>
   )

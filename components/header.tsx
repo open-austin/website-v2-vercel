@@ -25,7 +25,7 @@ import DonateButton from './donateButton'
 import DarkModeSwitch from './darkModeSwitch'
 import { Link as NextLink } from './link'
 
-export default function WithSubnavigation() {
+export const Header = () => {
   const { isOpen, onToggle } = useDisclosure()
 
   return (

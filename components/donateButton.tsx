@@ -1,11 +1,15 @@
-import { Link, Button } from '@chakra-ui/react'
+import { Button } from '@chakra-ui/react'
 
 export default function DonateButton() {
   return (
-    <Link href="https://opencollective.com/open-austin" target={'_blank'}>
+    <a
+      href="https://opencollective.com/open-austin"
+      target="_blank"
+      rel="noreferrer"
+    >
       <Button variant="primary" display={{ base: 'none', md: 'inline-flex' }}>
         Donate
       </Button>
-    </Link>
+    </a>
   )
 }

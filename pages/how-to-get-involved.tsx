@@ -10,8 +10,7 @@ const GetInvolved = () => {
         <Text>
           We host{' '}
           <Link href="https://www.meetup.com/Open-Austin/" isExternal>
-            Community Action Nights (CANs) on the second and fourth Wednesday of
-            each month
+            Community Action Nights (CANs) every other week
           </Link>{' '}
           to work on technology and design projects that positively impact
           public policy and our communities. We amplify the initiatives of other

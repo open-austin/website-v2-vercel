@@ -9,7 +9,7 @@ function CompletedProjectList({ projects }: ProjectListProp) {
       <Heading variant="projectSection">Completed Works</Heading>
       <Text maxW={{ base: '90%', md: '100%' }} style={{ textAlign: 'center' }}>
         Here are a few of our complete work. For all of our projects visit our
-        <Link> Github</Link>.
+        <Link> Github Page</Link>.
       </Text>
       <SimpleGrid
         minChildWidth={{ md: '45%' }}

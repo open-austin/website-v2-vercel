@@ -76,15 +76,6 @@ const components = {
     baseStyle: {
       color: colors.brand.orange,
     },
-    variants: {
-      socialLink: {
-        w: 8,
-        h: 8,
-        rounded: 'full',
-        cursor: 'pointer',
-        display: 'inline-flex',
-      },
-    },
   },
   Button: {
     baseStyle: {

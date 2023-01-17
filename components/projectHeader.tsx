@@ -1,6 +1,5 @@
+import Link from 'next/link'
 import { Button, Flex, Heading, Text } from '@chakra-ui/react'
-
-import { Link } from './link'
 
 const ProjectHeader = () => {
   return (

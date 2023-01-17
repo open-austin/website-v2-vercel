@@ -12,8 +12,6 @@ export type LinkProps = ChakraLinkProps
 
 export const Link = ({ href = '/', children, ...rest }: LinkProps) => (
   <NextLink passHref href={href}>
-    <ChakraLink {...rest} style={{ textDecoration: 'none' }}>
-      {children}
-    </ChakraLink>
+    <ChakraLink {...rest}>{children}</ChakraLink>
   </NextLink>
 )

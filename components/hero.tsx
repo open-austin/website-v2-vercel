@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import {
   Box,
   Button,
@@ -10,7 +11,6 @@ import {
   useBreakpointValue,
   Heading,
 } from '@chakra-ui/react'
-import { Link } from './link'
 
 const Hero = () => (
   <Flex w={'100vw'} h={'calc(100vh - 335px)'} pos="relative">

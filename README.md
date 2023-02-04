@@ -11,6 +11,16 @@ V2 - This site!
 
 ---
 
+### The "stack"
+
+- https://typescriptlang.org -- Base language
+- https://chakra-ui.com -- Component library
+- https://reactjs.org -- Model/View/Reactivity layer
+- https://nextjs.org -- Server-side rendering / framework
+- https://vercel.com -- Hosting (integrates well with Next.js)
+
+---
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

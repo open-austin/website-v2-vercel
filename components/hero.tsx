@@ -69,11 +69,11 @@ const Hero = () => (
         </Heading>
 
         <Stack direction={'row'} align={'flex-end'} justifyContent="center">
-          <Link href="about">
-            <Button variant="primary">About</Button>
+          <Link href="about" passHref>
+            <Button variant="primary" as="a">About</Button>
           </Link>
-          <Link href="portfolio">
-            <Button variant="primary">Projects</Button>
+          <Link href="portfolio" passHref>
+            <Button variant="primary" as="a">Projects</Button>
           </Link>
         </Stack>
       </Box>

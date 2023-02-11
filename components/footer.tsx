@@ -75,6 +75,7 @@ export const Footer = () => (
                 target="_blank"
                 rel="noreferrer"
                 fontSize={30}
+                aria-label={link.label}
               >
                 {link.icon}
               </ChakraLink>

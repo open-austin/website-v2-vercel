@@ -13,8 +13,8 @@ const ProjectHeader = () => {
       <Text style={{ textAlign: 'center' }} fontSize="xl">
         Have an idea to improve our community?
       </Text>
-      <Link href="/collaborate-with-us">
-        <Button variant="primary">Submit Your Idea</Button>
+      <Link href="/collaborate-with-us" passHref>
+        <Button variant="primary" as="a">Submit Your Idea</Button>
       </Link>
     </Flex>
   )

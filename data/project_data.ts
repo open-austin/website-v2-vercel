@@ -23,7 +23,7 @@ export const projectData = [
     access_at: '',
     project_at: 'https://github.com/open-austin/rally-for-the-run-off',
     type: '',
-    status: '',
+    status: 'in development',
     categories: ['environment'],
     contact: ['Liani Lye, Dan Minshew'],
     date: '',

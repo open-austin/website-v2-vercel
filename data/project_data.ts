@@ -14,7 +14,7 @@ export const projectData = [
     screenshot: '',
     featured: true,
     archived: false,
-    skipSize: 552,
+    skipSize: 496,
   },
   {
     title: 'Power Outages',
@@ -83,7 +83,7 @@ export const projectData = [
     screenshot: '',
     featured: true,
     archived: false,
-    skipSize: 552,
+    skipSize: 496,
   },
   {
     title: 'Tenant File App',

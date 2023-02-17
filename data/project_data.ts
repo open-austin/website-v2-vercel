@@ -4,7 +4,7 @@ export const projectData = [
     description:
       'TBD',
     access_at: '',
-    project_at: 'https://github.com/open-austin/rally-for-the-run-off',
+    project_at: 'https://github.com/open-austin/phone-code-mapping',
     type: '',
     status: 'in development',
     categories: ['mental health'],
@@ -24,13 +24,14 @@ export const projectData = [
     project_at: 'https://github.com/open-austin/rally-for-the-run-off',
     type: '',
     status: 'in development',
-    categories: ['environment'],
+    categories: ['meta'],
     contact: ['Liani Lye, Dan Minshew'],
     date: '',
     thumb: null,
     screenshot: '',
     featured: true,
     archived: false,
+    stack: ['Typescript', 'Next.JS', 'Vercel'],
     skipSize: 496,
   },
   {
@@ -54,7 +55,7 @@ export const projectData = [
     title: 'Indigent Defense Stats',
     description:
       'Collect and analyze court records from counties across Texas, to compare effectiveness of court-appointed with privately retained attorneys.',
-    access_at: 'https://emilybartha.shinyapps.io/hays-county-defense/',
+    access_at: 'https://indigentdefense.net/',
     project_at: 'https://github.com/open-austin/indigent-defense-stats',
     type: 'scraper',
     status: 'in development',

@@ -2,7 +2,7 @@ export const projectData = [
   {
     title: 'Phone Code Mapping',
     description:
-      'TBD',
+      'Identifying geography and issue-area trends from anonymized mental health intake call data.',
     access_at: '',
     project_at: 'https://github.com/open-austin/phone-code-mapping',
     type: '',
@@ -19,7 +19,7 @@ export const projectData = [
   {
     title: 'Open Austin website',
     description:
-      'TBD',
+      'This website!',
     access_at: '',
     project_at: 'https://github.com/open-austin/website-v2-vercel/',
     type: '',
@@ -37,7 +37,7 @@ export const projectData = [
   {
     title: 'Power Outages',
     description:
-      'TBD',
+      'Tracking power outages in Austin over time to enable people to conduct analysis or advocacy.',
     access_at: '',
     project_at: 'https://github.com/open-austin/energy-outage',
     type: '',

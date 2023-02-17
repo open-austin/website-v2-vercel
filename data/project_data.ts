@@ -21,7 +21,7 @@ export const projectData = [
     description:
       'TBD',
     access_at: '',
-    project_at: 'https://github.com/open-austin/rally-for-the-run-off',
+    project_at: 'https://github.com/open-austin/website-v2-vercel/',
     type: '',
     status: 'in development',
     categories: ['meta'],
@@ -39,7 +39,7 @@ export const projectData = [
     description:
       'TBD',
     access_at: '',
-    project_at: 'https://github.com/open-austin/rally-for-the-run-off',
+    project_at: 'https://github.com/open-austin/energy-outage',
     type: '',
     status: 'in development',
     categories: ['environment'],
@@ -93,7 +93,7 @@ export const projectData = [
     access_at: '',
     project_at: 'https://github.com/open-austin/rally-for-the-run-off',
     type: '',
-    status: '',
+    status: 'deployed',
     categories: ['voting'],
     contact: ['Daniel Roesler'],
     date: '',

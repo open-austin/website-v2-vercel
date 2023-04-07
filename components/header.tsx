@@ -307,7 +307,7 @@ const NAV_ITEMS: ReadonlyArray<NavItem> = [
     children: [
       {
         label: 'Join Slack',
-        href: 'https://slack.open-austin.org/',
+        href: 'https://open-austin.slack.com/',
         external: true,
       },
       {

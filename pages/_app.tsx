@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <title>Open Austin</title>
         <meta
           name="description"
-          content="Open Austin is a volunteer citizen brigade advocating for open government, open data, and civic application development since 2009."
+          content="Open Austin supports local organizations tackling systemic, economic, and racial injustice. We are a technical volunteer community making information and data more accessible to the public."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

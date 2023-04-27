@@ -5,7 +5,7 @@ const GetInvolved = () => {
     <Container maxW="80ch" minH={'calc(100vh - 335px)'}>
       <Stack>
         <Heading as="h1" variant="title">
-          How We Work
+          How to Get Involved
         </Heading>
         <Text>
           We host{' '}

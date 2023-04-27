@@ -15,7 +15,7 @@ const MeetTheTeam = () => (
     <Stack py={{ base: 10, md: 14 }}>
       <Center>
         <Heading as="h1" variant="title" mb={8} justifyContent="center">
-          Open Austin Leadership
+          Meet the Team
         </Heading>
       </Center>
       <Text>

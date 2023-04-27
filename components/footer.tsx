@@ -11,7 +11,13 @@ import {
   Heading,
 } from '@chakra-ui/react'
 import { ReactNode } from 'react'
-import { FaGithub, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa'
+import {
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+  FaTwitter,
+  FaYoutube,
+} from 'react-icons/fa'
 import { Link, LinkProps } from './link'
 
 export const Footer = () => (
@@ -122,6 +128,12 @@ const SOCIAL_ITEMS: ReadonlyArray<FooterItems> = [
     href: 'https://twitter.com/openaustin',
     icon: <FaTwitter />,
     key: 'twitter',
+  },
+  {
+    label: 'Instagram',
+    href: 'https://instagram.com/open_austin',
+    icon: <FaInstagram />,
+    key: 'instagram',
   },
   {
     label: 'Youtube',

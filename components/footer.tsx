@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from 'next/image'
 import {
   Box,
   Container,
@@ -8,20 +8,20 @@ import {
   Text,
   useColorModeValue,
   Heading,
-} from "@chakra-ui/react";
-import { ReactNode } from "react";
-import { FaGithub, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
-import { Link, LinkProps } from "./link";
+} from '@chakra-ui/react'
+import { ReactNode } from 'react'
+import { FaGithub, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa'
+import { Link, LinkProps } from './link'
 
 export const Footer = () => (
   <Box
-    bg={useColorModeValue("gray.50", "gray.900")}
-    color={useColorModeValue("gray.700", "gray.200")}
+    bg={useColorModeValue('gray.50', 'gray.900')}
+    color={useColorModeValue('gray.700', 'gray.200')}
   >
-    <Container as={Stack} maxW={"6xl"} py={[4, 10]}>
+    <Container as={Stack} maxW={'6xl'} py={[4, 10]}>
       <SimpleGrid
-        templateColumns={{ base: "1fr 1fr", md: "2fr 1fr 1fr" }}
-        templateRows={{ base: "1fr 1fr", md: "1fr" }}
+        templateColumns={{ base: '1fr 1fr', md: '2fr 1fr 1fr' }}
+        templateRows={{ base: '1fr 1fr', md: '1fr' }}
         spacing={8}
       >
         <Stack order={[1, 2]}>
@@ -47,22 +47,22 @@ export const Footer = () => (
         </Stack>
         <Stack
           spacing={6}
-          gridColumn={{ base: "1 / -1", md: "1" }}
+          gridColumn={{ base: '1 / -1', md: '1' }}
           order={[3, 1]}
         >
           <Box alignSelf="center">
             <Image
               alt="Open Austin's logo; a five-pointed star in orange and black"
               priority
-              src={"/assets/logo.svg"}
+              src={'/assets/logo.svg'}
               width={60}
               height={60}
             />
           </Box>
-          <Text fontSize={"sm"} alignSelf="center">
+          <Text fontSize={'sm'} alignSelf="center">
             © 2022 Open Austin. All rights reserved
           </Text>
-          <Stack direction={"row"} spacing={6} justifyContent="center">
+          <Stack direction={'row'} spacing={6} justifyContent="center">
             {SOCIAL_ITEMS.map((link) => (
               <ChakraLink
                 href={link.href}
@@ -80,60 +80,60 @@ export const Footer = () => (
       </SimpleGrid>
     </Container>
   </Box>
-);
+)
 
 type FooterItems = LinkProps & {
-  key: string;
-  label: string;
-  icon?: ReactNode;
-};
+  key: string
+  label: string
+  icon?: ReactNode
+}
 
 const FOOTER_ITEMS_MORE_INFO: ReadonlyArray<FooterItems> = [
-  { href: "about", label: "About", key: "About" },
-  { href: "portfolio", label: "Portfolio", key: "Portfolio" },
+  { href: 'about', label: 'About', key: 'About' },
+  { href: 'portfolio', label: 'Portfolio', key: 'Portfolio' },
   {
-    href: "mailto:info@open-austin.org",
-    label: "Contact us",
-    key: "Contact-Us",
+    href: 'mailto:info@open-austin.org',
+    label: 'Contact us',
+    key: 'Contact-Us',
   },
-];
+]
 
 const FOOTER_ITEMS_SUPPORT: ReadonlyArray<FooterItems> = [
   {
-    href: "https://opencollective.com/open-austin",
-    label: "Open Collective",
-    key: "oc",
+    href: 'https://opencollective.com/open-austin',
+    label: 'Open Collective',
+    key: 'oc',
   },
   {
-    href: "https://github.com/sponsors/open-austin",
-    label: "GitHub Sponsor",
-    key: "github",
+    href: 'https://github.com/sponsors/open-austin',
+    label: 'GitHub Sponsor',
+    key: 'github',
   },
-];
+]
 
 const SOCIAL_ITEMS: ReadonlyArray<FooterItems> = [
   {
-    label: "Twitter",
-    href: "https://twitter.com/openaustin",
+    label: 'Twitter',
+    href: 'https://twitter.com/openaustin',
     icon: <FaTwitter />,
-    key: "twitter",
+    key: 'twitter',
   },
   {
-    label: "Youtube",
-    href: "https://www.youtube.com/channel/UCSDcLeHsq8k-WLaJaRQHh4w",
+    label: 'Youtube',
+    href: 'https://www.youtube.com/channel/UCSDcLeHsq8k-WLaJaRQHh4w',
     icon: <FaYoutube />,
-    key: "youtube",
+    key: 'youtube',
   },
   {
-    label: "LinkedIn",
-    href: "https://www.linkedin.com/company/open-austin/about/",
+    label: 'LinkedIn',
+    href: 'https://www.linkedin.com/company/open-austin/about/',
     icon: <FaLinkedin />,
-    key: "linkedin",
+    key: 'linkedin',
   },
   {
-    label: "GitHub",
-    href: "https://github.com/open-austin",
+    label: 'GitHub',
+    href: 'https://github.com/open-austin',
     icon: <FaGithub />,
-    key: "github",
+    key: 'github',
   },
-];
+]

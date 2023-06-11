@@ -4,7 +4,7 @@ import ProjectHeader from '../components/projectHeader'
 
 const Portfolio = () => {
   return (
-    <Container maxW="container.lg" mb={{ base: '50%', md: '15%' }}>
+    <Container maxW="container.lg" mb={{ base: '90%', md: '15%' }}>
       <Flex flexDirection="column" alignItems="center" my="5%">
         <ProjectHeader />
         <ProjectList />

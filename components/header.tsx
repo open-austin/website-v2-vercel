@@ -286,7 +286,7 @@ const NAV_ITEMS: ReadonlyArray<NavItem> = [
         href: '/portfolio',
       },
       {
-        label: 'How to get involved',
+        label: 'How to Get Involved',
         subLabel: 'Learn about how we work and finding the right project.',
         href: '/how-to-get-involved',
       },
@@ -297,7 +297,7 @@ const NAV_ITEMS: ReadonlyArray<NavItem> = [
         wip: true,
       },
       {
-        label: 'Submit a project idea',
+        label: 'Submit a Project Idea',
         href: '/collaborate-with-us',
       },
     ],

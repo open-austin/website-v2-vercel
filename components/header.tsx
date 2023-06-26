@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from 'next/image';
 import {
   Box,
   Flex,
@@ -14,19 +14,19 @@ import {
   useColorModeValue,
   useDisclosure,
   Badge,
-} from '@chakra-ui/react'
+} from '@chakra-ui/react';
 import {
   HamburgerIcon,
   CloseIcon,
   ChevronDownIcon,
   ChevronRightIcon,
-} from '@chakra-ui/icons'
-import DonateButton from './donateButton'
-import DarkModeSwitch from './darkModeSwitch'
-import { Link as NextLink } from './link'
+} from '@chakra-ui/icons';
+import DonateButton from './donateButton';
+import DarkModeSwitch from './darkModeSwitch';
+import { Link as NextLink } from './link';
 
 export const Header = () => {
-  const { isOpen, onToggle } = useDisclosure()
+  const { isOpen, onToggle } = useDisclosure();
 
   return (
     <Box>
@@ -85,13 +85,13 @@ export const Header = () => {
         <MobileNav />
       </Collapse>
     </Box>
-  )
-}
+  );
+};
 
 const DesktopNav = () => {
-  const linkColor = useColorModeValue('gray.600', 'gray.200')
-  const linkHoverColor = useColorModeValue('gray.800', 'white')
-  const popoverContentBgColor = useColorModeValue('white', 'gray.800')
+  const linkColor = useColorModeValue('gray.600', 'gray.200');
+  const linkHoverColor = useColorModeValue('gray.800', 'white');
+  const popoverContentBgColor = useColorModeValue('white', 'gray.800');
 
   return (
     <Stack direction={'row'} spacing={8} align="center">
@@ -136,8 +136,8 @@ const DesktopNav = () => {
         </Box>
       ))}
     </Stack>
-  )
-}
+  );
+};
 
 const DesktopSubNav = ({ label, href, subLabel, wip }: NavItem) => {
   return (
@@ -190,8 +190,8 @@ const DesktopSubNav = ({ label, href, subLabel, wip }: NavItem) => {
         </Flex>
       </Stack>
     </Link>
-  )
-}
+  );
+};
 
 const MobileNav = () => {
   return (
@@ -204,11 +204,11 @@ const MobileNav = () => {
         <MobileNavItem key={navItem.label} {...navItem} />
       ))}
     </Stack>
-  )
-}
+  );
+};
 
 const MobileNavItem = ({ label, children, href }: NavItem) => {
-  const { isOpen, onToggle } = useDisclosure()
+  const { isOpen, onToggle } = useDisclosure();
 
   return (
     <Stack layerStyle="ns" onClick={children && onToggle}>
@@ -264,17 +264,17 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
         </Stack>
       </Collapse>
     </Stack>
-  )
-}
+  );
+};
 
 type NavItem = {
-  label: string
-  subLabel?: string
-  children?: Array<NavItem>
-  href?: string
-  external?: boolean
-  wip?: boolean
-}
+  label: string;
+  subLabel?: string;
+  children?: Array<NavItem>;
+  href?: string;
+  external?: boolean;
+  wip?: boolean;
+};
 
 const NAV_ITEMS: ReadonlyArray<NavItem> = [
   {
@@ -307,8 +307,9 @@ const NAV_ITEMS: ReadonlyArray<NavItem> = [
     children: [
       {
         label: 'Join Slack',
-        href: 'https://slack.open-austin.org/',
+        href: '#',
         external: true,
+        wip: true,
       },
       {
         label: 'Onboarding',
@@ -346,4 +347,6 @@ const NAV_ITEMS: ReadonlyArray<NavItem> = [
       },
     ],
   },
-]
+];
+
+export default Header;

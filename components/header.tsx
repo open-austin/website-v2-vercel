@@ -55,7 +55,7 @@ export const Header = () => {
             aria-label={'Toggle Navigation'}
           />
         </Flex>
-        <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
+        <Flex flex={{ base9: 1 }} justify={{ base: 'center', md: 'start' }}>
           <Link href="/">
             <Image
               alt="Open Austin's logo; a five-pointed star in orange and black"

@@ -19,7 +19,7 @@ const Collaborate = () => {
       <Stack>
         <Center>
           <Heading as="h1" variant="title">
-            Collaborate With Us
+            Submit a Project Idea
           </Heading>
         </Center>
         <Box>

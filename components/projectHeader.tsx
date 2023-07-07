@@ -9,12 +9,14 @@ const ProjectHeader = () => {
       justifyContent={{ base: 'space-around' }}
       gap={4}
     >
-      <Heading variant="title">Projects</Heading>
+      <Heading variant="title">Portfolio</Heading>
       <Text style={{ textAlign: 'center' }} fontSize="xl">
         Have an idea to improve our community?
       </Text>
       <Link href="/collaborate-with-us" passHref>
-        <Button variant="primary" as="a">Submit Your Idea</Button>
+        <Button variant="primary" as="a">
+          Submit Your Idea
+        </Button>
       </Link>
     </Flex>
   )

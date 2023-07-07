@@ -5,7 +5,7 @@ const GetInvolved = () => {
     <Container maxW="80ch" minH={'calc(100vh - 335px)'}>
       <Stack>
         <Heading as="h1" variant="title">
-          How We Work
+          How to Get Involved
         </Heading>
         <Text>
           We host{' '}
@@ -14,14 +14,17 @@ const GetInvolved = () => {
           </Link>{' '}
           to work on technology and design projects that positively impact
           public policy and our communities. We amplify the initiatives of other
-          Austin-based civic organizations, and we collaborate with other
-          chapters of the{' '}
-          <Link href="https://brigade.codeforamerica.org/" isExternal>
-            Code for America Brigade Network
-          </Link>{' '}
-          and the broader civic tech community via our{' '}
+          Austin-based civic organizations, and we collaborate with the broader
+          civic tech community via our{' '}
           <Link href="https://github.com/open-austin" isExternal>
             GitHub organization
+          </Link>
+          .
+        </Text>
+        <Text>
+          We are part of the{' '}
+          <Link href="http://www.civictechnologists.org/" isExternal>
+            Alliance of Civic Technologists
           </Link>
           .
         </Text>

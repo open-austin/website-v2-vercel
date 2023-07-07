@@ -18,7 +18,7 @@ export default function CodeOfConduct() {
         <Center>
           <Heading variant="title">Code of Conduct</Heading>
         </Center>
-        <Heading variant="section">General code of conduct</Heading>
+        <Heading variant="section">General Code of Conduct</Heading>
         <Text>
           Open Austin is committed to broad community participation, and making
           our events enjoyable and rewarding for everybody who participates. We
@@ -77,7 +77,7 @@ export default function CodeOfConduct() {
           Event organizers reserve the right to take action, up to and including
           expulsion, in response to violations of these policies.
         </Text>
-        <Heading variant="section">Anti-harassment policy</Heading>
+        <Heading variant="section">Anti-harassment Policy</Heading>
         <Text>
           All Open Austin events and their staff, presenters, and participants
           are held to an anti-harassment policy, included below.
@@ -138,7 +138,7 @@ export default function CodeOfConduct() {
           expectations widely we can all enjoy a harassment-free environment.
         </Text>
         <Heading variant="section" pt={12}>
-          Report an issue
+          Report an Issue
         </Heading>
         <iframe
           className="lazyloaded"

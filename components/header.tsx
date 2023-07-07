@@ -286,7 +286,7 @@ const NAV_ITEMS: ReadonlyArray<NavItem> = [
         href: '/portfolio',
       },
       {
-        label: 'How to get involved',
+        label: 'How to Get Involved',
         subLabel: 'Learn about how we work and finding the right project.',
         href: '/how-to-get-involved',
       },
@@ -297,7 +297,7 @@ const NAV_ITEMS: ReadonlyArray<NavItem> = [
         wip: true,
       },
       {
-        label: 'Submit a project idea',
+        label: 'Submit a Project Idea',
         href: '/collaborate-with-us',
       },
     ],
@@ -307,7 +307,8 @@ const NAV_ITEMS: ReadonlyArray<NavItem> = [
     children: [
       {
         label: 'Join Slack',
-        href: 'https://open-austin.slack.com/',
+        href: 'mailto:info@open-austin.org?subject=Join%20Slack%20Request',
+        subLabel: 'To receive the slack invite link, please send an email to info@open-austin.org',
         external: true,
       },
       {

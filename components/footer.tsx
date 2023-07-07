@@ -11,7 +11,13 @@ import {
   Heading,
 } from '@chakra-ui/react'
 import { ReactNode } from 'react'
-import { FaGithub, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa'
+import {
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+  FaTwitter,
+  FaYoutube,
+} from 'react-icons/fa'
 import { Link, LinkProps } from './link'
 
 export const Footer = () => (
@@ -65,7 +71,7 @@ export const Footer = () => (
             />
           </Box>
           <Text fontSize={'sm'} alignSelf="center">
-            © 2022 Open Austin. All rights reserved
+            © 2022 Open Austin. All rights reserved.
           </Text>
           <Stack direction={'row'} spacing={6} justifyContent="center">
             {SOCIAL_ITEMS.map((link) => (
@@ -98,7 +104,7 @@ const FOOTER_ITEMS_MORE_INFO: ReadonlyArray<FooterItems> = [
   { href: 'portfolio', label: 'Portfolio', key: 'Portfolio' },
   {
     href: 'mailto:info@open-austin.org',
-    label: 'Contact us',
+    label: 'Contact Us',
     key: 'Contact-Us',
   },
 ]
@@ -122,6 +128,12 @@ const SOCIAL_ITEMS: ReadonlyArray<FooterItems> = [
     href: 'https://twitter.com/openaustin',
     icon: <FaTwitter />,
     key: 'twitter',
+  },
+  {
+    label: 'Instagram',
+    href: 'https://instagram.com/open_austin',
+    icon: <FaInstagram />,
+    key: 'instagram',
   },
   {
     label: 'Youtube',

@@ -21,7 +21,7 @@ const MissionStatement = () => {
         py={{ base: 20, md: 28 }}
         direction={{ base: 'column', md: 'row' }}
       >
-        <Stack flex={1} spacing={{ base: 5, md: 10 }}>
+        <Stack flex={1}>
           <Heading lineHeight={1.1} fontWeight={600} variant="title">
             Mission Statement
           </Heading>
@@ -33,11 +33,10 @@ const MissionStatement = () => {
             creatively to address local civic and social challenges, and improve
             all our neighbors’ quality of life.
           </Text>
-
-          <Text as={'span'}>
-            We are affiliated with{' '}
-            <Link href="https://brigade.codeforamerica.org/" isExternal>
-              Code for America’s Brigade Network
+          <Text>
+            We are part of the{' '}
+            <Link href="http://www.civictechnologists.org/" isExternal>
+              Alliance of Civic Technologists
             </Link>
             .
           </Text>

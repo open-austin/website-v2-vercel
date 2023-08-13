@@ -25,7 +25,7 @@ const Collaborate = () => {
         <Box>
           <Stack>
             <Heading variant="section">
-              Identified a problem in the Austin community?
+            Identified a Problem in the Austin Community?
             </Heading>
             <Text>
               {`We'd love to work with you and make Austin more liveable for

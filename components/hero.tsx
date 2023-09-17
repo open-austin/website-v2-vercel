@@ -8,7 +8,6 @@ import {
   Flex,
   Text,
   VStack,
-  useBreakpointValue,
   Heading,
 } from '@chakra-ui/react'
 
@@ -30,8 +29,8 @@ const Hero = () => (
     >
       <Box
         boxShadow="2xl"
-        maxW={useBreakpointValue({ base: 'full', md: 600 })}
-        p={useBreakpointValue({ base: 4, md: 12 })}
+        maxW={['full', 600]}
+        p={[4, 12]}
         rounded="md"
         bgColor={'blackAlpha.300'}
       >
@@ -39,7 +38,7 @@ const Hero = () => (
           as="h1"
           color={'orange.300'}
           textAlign="center"
-          fontSize={useBreakpointValue({ base: '6xl', md: '7xl' })}
+          fontSize={['6xl', '7xl']}
           fontWeight={900}
         >
           Open Austin
@@ -50,7 +49,7 @@ const Hero = () => (
           fontWeight={500}
           lineHeight={1.2}
           p={4}
-          fontSize={useBreakpointValue({ base: 'xl', md: 'lg' })}
+          fontSize={['xl', 'lg']}
         >
           Open Austin addresses local social and civic challenges through
           creative uses of technology. We foster relationships between
@@ -61,7 +60,7 @@ const Hero = () => (
           as="h2"
           color={'gray.100'}
           textAlign="center"
-          fontSize={useBreakpointValue({ base: '3xl', md: '5xl' })}
+          fontSize={['3xl', '5xl']}
           fontWeight={700}
           pb={4}
         >
@@ -70,10 +69,14 @@ const Hero = () => (
 
         <Stack direction={'row'} align={'flex-end'} justifyContent="center">
           <Link href="about" passHref>
-            <Button variant="primary" as="a">About</Button>
+            <Button variant="primary" as="a">
+              About
+            </Button>
           </Link>
           <Link href="portfolio" passHref>
-            <Button variant="primary" as="a">Projects</Button>
+            <Button variant="primary" as="a">
+              Projects
+            </Button>
           </Link>
         </Stack>
       </Box>

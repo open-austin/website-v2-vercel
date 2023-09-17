@@ -1,5 +1,7 @@
 // Importing fonts (there's probably a better way to do this...)
+
 import '@fontsource/crimson-text'
+import crimsonTextLatin from '@fontsource/crimson-text/files/crimson-text-latin-400-normal.woff2'
 
 // Setup for Chakra and Next environments
 import { ChakraProvider } from '@chakra-ui/react'
@@ -22,6 +24,13 @@ function MyApp({ Component, pageProps }: AppProps) {
           content="Open Austin supports local organizations tackling systemic, economic, and racial injustice. We are a technical volunteer community making information and data more accessible to the public."
         />
         <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="preload"
+          href={crimsonTextLatin}
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
       </Head>
       <Header />
       <Analytics />

@@ -305,12 +305,6 @@ const NAV_ITEMS: ReadonlyArray<NavItem> = [
         subLabel: 'To receive the slack invite link, please email info@open-austin.org',
         external: true,
       },
-      {
-        label: 'Onboarding',
-        subLabel: 'Learn about how we work.',
-        href: '#',
-        wip: true,
-      },
     ],
   },
   {

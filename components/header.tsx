@@ -286,15 +286,9 @@ const NAV_ITEMS: ReadonlyArray<NavItem> = [
         href: '/portfolio',
       },
       {
-        label: 'How to Get Involved',
+        label: 'Get Involved',
         subLabel: 'Learn about how we work and finding the right project.',
         href: '/how-to-get-involved',
-      },
-      {
-        label: 'Project Handbook',
-        subLabel: 'Our guide to collaborating on successful projects.',
-        href: '#',
-        wip: true,
       },
       {
         label: 'Submit a Project Idea',
@@ -330,16 +324,6 @@ const NAV_ITEMS: ReadonlyArray<NavItem> = [
       {
         label: 'Mission Statement',
         href: '/mission-statement',
-      },
-      {
-        label: 'Wins',
-        href: '#',
-        wip: true,
-      },
-      {
-        label: 'Community Partners',
-        href: '#',
-        wip: true,
       },
       {
         label: 'Code of Conduct',

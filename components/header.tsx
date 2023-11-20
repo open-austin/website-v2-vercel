@@ -301,7 +301,7 @@ const NAV_ITEMS: ReadonlyArray<NavItem> = [
         external: true,
       },
       {
-        label: 'Get Involved',
+        label: 'Volunteer with us',
         subLabel: 'Learn about how we work and finding the right project.',
         href: '/how-to-get-involved',
       },

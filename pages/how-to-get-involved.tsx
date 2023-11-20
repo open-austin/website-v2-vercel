@@ -5,7 +5,7 @@ const GetInvolved = () => {
     <Container maxW="80ch" minH={'calc(100vh - 335px)'}>
       <Stack>
         <Heading as="h1" variant="title">
-          How to Get Involved
+          Volunteer with us
         </Heading>
         <Text>
           We host{' '}
@@ -21,7 +21,6 @@ const GetInvolved = () => {
           </Link>
           .
         </Text>
-        {/*
         <Text>
           We are part of the{' '}
           <Link href="http://www.civictechnologists.org/" isExternal>
@@ -29,7 +28,6 @@ const GetInvolved = () => {
           </Link>
           .
         </Text>
-        */}
       </Stack>
     </Container>
   )

@@ -171,7 +171,7 @@ const DesktopSubNav = ({ label, href, subLabel, wip }: NavItem) => {
           >
             {subLabel}
           </Text>
-        </Box>
+        </Box>f
         <Flex
           transition={'all .3s ease'}
           transform={'translateX(-10px)'}
@@ -308,7 +308,7 @@ const NAV_ITEMS: ReadonlyArray<NavItem> = [
       {
         label: 'Join Slack',
         href: 'mailto:info@open-austin.org?subject=Join%20Slack%20Request',
-        subLabel: 'To receive the slack invite link, please send an email to info@open-austin.org',
+        subLabel: 'To receive the slack invite link, please email info@open-austin.org',
         external: true,
       },
       {

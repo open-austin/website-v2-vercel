@@ -28,8 +28,8 @@ const GetInvolved = () => {
             Alliance of Civic Technologists
           </Link>
           .
-        */}
         </Text>
+        */}
       </Stack>
     </Container>
   )

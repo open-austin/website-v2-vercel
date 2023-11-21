@@ -171,7 +171,7 @@ const DesktopSubNav = ({ label, href, subLabel, wip }: NavItem) => {
           >
             {subLabel}
           </Text>
-        </Box>f
+        </Box>
         <Flex
           transition={'all .3s ease'}
           transform={'translateX(-10px)'}

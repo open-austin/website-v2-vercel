@@ -34,7 +34,7 @@ const MeetTheTeam = () => (
         >
           board meeting minutes
         </Link>
-        . Do you have more questions that this site does not answer? Email{' '}
+        . If you have more questions, email{' '}
         <Link href="mailto:info@open-austin.org" isExternal>
           info@open-austin.org
         </Link>
@@ -71,10 +71,10 @@ const MeetTheTeam = () => (
             - At-large Member
           </ListItem>
           <ListItem>
-            <Link href="https://github.com/newswim" isExternal>
-              Dan Minshew
-            </Link>{' '}
-            - At-large Member
+            Courtney Rosenthal
+          </ListItem>
+          <ListItem>
+            Paul Vonder Haar
           </ListItem>
         </UnorderedList>
         <Text mb={2} mt={2}>
@@ -83,7 +83,6 @@ const MeetTheTeam = () => (
         <UnorderedList layerStyle={'list'}>
           <ListItem>Jae Kwon</ListItem>
           <ListItem>Daniel Roesler</ListItem>
-          <ListItem>Mateo Clarke</ListItem>
         </UnorderedList>
       </Box>
     </Stack>

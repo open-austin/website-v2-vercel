@@ -286,17 +286,6 @@ const NAV_ITEMS: ReadonlyArray<NavItem> = [
         href: '/portfolio',
       },
       {
-        label: 'How to Get Involved',
-        subLabel: 'Learn about how we work and finding the right project.',
-        href: '/how-to-get-involved',
-      },
-      {
-        label: 'Project Handbook',
-        subLabel: 'Our guide to collaborating on successful projects.',
-        href: '#',
-        wip: true,
-      },
-      {
         label: 'Submit a Project Idea',
         href: '/collaborate-with-us',
       },
@@ -308,14 +297,13 @@ const NAV_ITEMS: ReadonlyArray<NavItem> = [
       {
         label: 'Join Slack',
         href: 'mailto:info@open-austin.org?subject=Join%20Slack%20Request',
-        subLabel: 'To receive the slack invite link, please send an email to info@open-austin.org',
+        subLabel: 'To receive the slack invite link, please email info@open-austin.org',
         external: true,
       },
       {
-        label: 'Onboarding',
-        subLabel: 'Learn about how we work.',
-        href: '#',
-        wip: true,
+        label: 'Volunteer with us',
+        subLabel: 'Learn about how we work and finding the right project.',
+        href: '/how-to-get-involved',
       },
     ],
   },
@@ -330,16 +318,6 @@ const NAV_ITEMS: ReadonlyArray<NavItem> = [
       {
         label: 'Mission Statement',
         href: '/mission-statement',
-      },
-      {
-        label: 'Wins',
-        href: '#',
-        wip: true,
-      },
-      {
-        label: 'Community Partners',
-        href: '#',
-        wip: true,
       },
       {
         label: 'Code of Conduct',

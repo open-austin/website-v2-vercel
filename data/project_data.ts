@@ -19,7 +19,7 @@ export const projectData = [
     thumb: null,
     screenshot: `library.png`,
     featured: false,
-    stack: ['Drupal, PHP`],
+    stack: [`Drupal`, `PHP`],
     skipSize: 496,
   },
 

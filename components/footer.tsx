@@ -15,7 +15,6 @@ import {
   FaGithub,
   FaInstagram,
   FaLinkedin,
-  FaTwitter,
   FaYoutube,
 } from 'react-icons/fa'
 import { Link, LinkProps } from './link'
@@ -123,12 +122,6 @@ const FOOTER_ITEMS_SUPPORT: ReadonlyArray<FooterItems> = [
 ]
 
 const SOCIAL_ITEMS: ReadonlyArray<FooterItems> = [
-  {
-    label: 'Twitter',
-    href: 'https://twitter.com/openaustin',
-    icon: <FaTwitter />,
-    key: 'twitter',
-  },
   {
     label: 'Instagram',
     href: 'https://instagram.com/open_austin',

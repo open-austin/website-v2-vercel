@@ -1,21 +1,87 @@
 export const projectData = [
+
+/***** ***** ***** ***** ***** *****/
+/*                                 */
+/*    WORK IN-PROGRESS PROJECTS    */
+/*                                 */
+/***** ***** ***** ***** ***** *****/
   {
-    title: 'Phone Code Mapping',
+    title: 'Austin Public Library website',
     description:
-      'Identifying geography and issue-area trends from anonymized mental health intake call data.',
-    access_at: '',
-    project_at: 'https://github.com/open-austin/phone-code-mapping',
-    type: '',
+      "Collaborating with Austin Public Library technologists to iterate our city's library website.",
+    access_at: 'https://library.austintexas.gov/',
+    project_at: 'https://github.com/APL-Innovation-Lab/Rooms',
+    type: 'scraper',
     status: 'in development',
-    categories: ['mental health'],
-    contact: ['Paul Vonder Haar'],
-    date: '',
+    categories: ['digital services'],
+    contact: ['Liani Lye', '@lianilychee'],
+    date: '2023-09-11T00:00:00.000Z',
     thumb: null,
-    screenshot: '',
-    featured: true,
-    archived: false,
+    screenshot: `library.png`,
+    featured: false,
+    stack: [`Drupal`, `PHP`],
     skipSize: 496,
   },
+
+  {
+    title: 'Experience program (new)',
+    description:
+      'The Experience Program fosters the next generation of civics and technology leaders by developing data literacy practices, structured problem solving skills, and the ability to work in a collaborative environment.',
+      /*
+      Full blurb:
+      'The Experience Program fosters the next generation of civics and technology leaders by developing data literacy practices, structured problem solving skills, and the ability to work in a collaborative environment.  We train leaders from <bootcamps and other places we source from> while improving open data and public interest technology within city government and other civic Austin organizations.',
+      */
+    //access_at: null,
+    //project_at: null,
+    type: 'scraper',
+    status: 'in development',
+    categories: ['data services'],
+    contact: ['Liani Lye', '@lianilychee'],
+    date: '2023-09-11T00:00:00.000Z',
+    thumb: null,
+    screenshot: `experience.png`,
+    featured: false,
+    stack: ['Tableau', 'Python', 'more TBD'],
+    skipSize: 496,
+  },
+
+  {
+    title: 'Indigent Defense Stats',
+    description:
+      'Collect and analyze court records from counties across Texas, to compare effectiveness of court-appointed with privately retained attorneys.',
+    access_at: 'https://indigentdefense.net/',
+    project_at: 'https://github.com/open-austin/indigent-defense-stats',
+    type: 'scraper',
+    status: 'in development',
+    categories: ['justice system', 'web scraping'],
+    contact: ['Dan Minshew', '@newswim'],
+    date: '2021-05-14T00:00:00.000Z',
+    thumb: null,
+    screenshot: `indigent-defense.png`,
+    featured: false,
+    stack: ['Python', 'R', 'Azure Functions', `TypeScript`, `React`, `D3`],
+    skipSize: 496,
+  },
+
+  {
+    title: 'Educate program (new)',
+    description:
+      'The Experience program promotes digital literacy across city government agencies and community organizations across Austin, promoting neighborhood and issue-based dialogue.',
+    //access_at: null,
+    //project_at: null,
+    type: 'scraper',
+    status: 'in development',
+    categories: ['data services'],
+    contact: ['Liani Lye', '@lianilychee'],
+    date: '2023-09-11T00:00:00.000Z',
+    thumb: null,
+    screenshot: `educate.png`,
+    featured: false,
+    stack: ['TBD'],
+    skipSize: 496,
+  },
+
+/*
   {
     title: 'Open Austin website',
     description:
@@ -34,6 +100,33 @@ export const projectData = [
     stack: ['Typescript', 'Next.JS', 'Vercel'],
     skipSize: 496,
   },
+*/
+
+/***** ***** ***** ***** ***** *****/
+/*                                 */
+/*         FINISHED PROJECTS       */
+/*                                 */
+/***** ***** ***** ***** ***** *****/
+
+  {
+    title: 'Phone Code Mapping',
+    description:
+      'Identifying geography and issue-area trends from anonymized mental health intake call data.',
+    access_at: '',
+    project_at: 'https://github.com/open-austin/phone-code-mapping',
+    type: '',
+    status: 'deployed',
+    categories: ['mental health'],
+    contact: ['Paul Vonder Haar'],
+    date: '',
+    thumb: null,
+    screenshot: '',
+    featured: true,
+    archived: false,
+    skipSize: 496,
+  },
+
+/*
   {
     title: 'Power Outages',
     description:
@@ -51,23 +144,8 @@ export const projectData = [
     archived: false,
     skipSize: 496,
   },
-  {
-    title: 'Indigent Defense Stats',
-    description:
-      'Collect and analyze court records from counties across Texas, to compare effectiveness of court-appointed with privately retained attorneys.',
-    access_at: 'https://indigentdefense.net/',
-    project_at: 'https://github.com/open-austin/indigent-defense-stats',
-    type: 'scraper',
-    status: 'in development',
-    categories: ['justice system', 'web scraping'],
-    contact: ['Dan Minshew', '@newswim'],
-    date: '2021-05-14T00:00:00.000Z',
-    thumb: null,
-    screenshot: `indigent-defense.png`,
-    featured: false,
-    stack: ['Python', 'R', 'Azure Functions', `TypeScript`, `React`, `D3`],
-    skipSize: 496,
-  },
+*/
+
   {
     title: 'Visualizing Vulnerable Communities',
     description:
@@ -224,13 +302,15 @@ export const projectData = [
     featured: false,
     skipSize: 531,
   },
+
+/*
   {
     title: 'BallotAPI',
     description: 'Free, public-domain database of every ballot in the U.S.',
     access_at: 'https://ballotapi.org/',
     project_at: 'https://github.com/open-austin/ballotapi',
     type: 'web service',
-    status: 'in development',
+    status: 'deployed',
     categories: ['government', 'elections'],
     contact: ['Daniel Roesler', '@diafygi'],
     date: '2019-03-14T00:00:00.000Z',
@@ -240,4 +320,5 @@ export const projectData = [
     stack: ['Python', 'Jekyll', 'PostgreSQL'],
     skipSize: 496,
   },
+*/
 ]

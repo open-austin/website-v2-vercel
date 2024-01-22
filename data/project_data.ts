@@ -10,7 +10,7 @@ export const projectData = [
     description:
       "Collaborating with Austin Public Library technologists to iterate our city's library website.",
     access_at: 'https://library.austintexas.gov/',
-    project_at: null,
+    project_at: 'https://github.com/APL-Innovation-Lab/Rooms',
     type: 'scraper',
     status: 'in development',
     categories: ['digital services'],
@@ -31,8 +31,8 @@ export const projectData = [
       Full blurb:
       'The Experience Program fosters the next generation of civics and technology leaders by developing data literacy practices, structured problem solving skills, and the ability to work in a collaborative environment.  We train leaders from <bootcamps and other places we source from> while improving open data and public interest technology within city government and other civic Austin organizations.',
       */
-    access_at: null,
-    project_at: null,
+    //access_at: null,
+    //project_at: null,
     type: 'scraper',
     status: 'in development',
     categories: ['digital services'],
@@ -67,8 +67,8 @@ export const projectData = [
     title: 'Educate program (new)',
     description:
       'The Experience program promotes digital literacy across city government agencies and community organizations across Austin, promoting neighborhood and issue-based dialogue.',
-    access_at: null,
-    project_at: null,
+    //access_at: null,
+    //project_at: null,
     type: 'scraper',
     status: 'in development',
     categories: ['digital services'],

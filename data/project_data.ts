@@ -6,9 +6,9 @@ export const projectData = [
 /*                                 */
 /***** ***** ***** ***** ***** *****/
   {
-    title: 'Austin Public Library',
+    title: 'Austin Public Library website',
     description:
-      'Collaborating with Austin Public Library technologists to iterate on the library website, so that patrons can easily navigate it, APL staffers can maintain it, and community groups can readily contribute to it.',
+      "Collaborating with Austin Public Library technologists to iterate our city's library website.",
     access_at: 'https://library.austintexas.gov/',
     project_at: null,
     type: 'scraper',
@@ -18,6 +18,24 @@ export const projectData = [
     date: '2023-09-11T00:00:00.000Z',
     thumb: null,
     screenshot: `library.png`,
+    featured: false,
+    stack: ['Drupal, PHP`],
+    skipSize: 496,
+  },
+
+  {
+    title: 'Experience program (new)',
+    description:
+      'The Experience Program fosters the next generation of civics and technology leaders by developing data literacy practices, structured problem solving skills, and the ability to work in a collaborative environment.  We train leaders from <bootcamps and other places we source from> while improving open data and public interest technology within city government and other civic Austin organizations.',
+    access_at: null,
+    project_at: null,
+    type: 'scraper',
+    status: 'in development',
+    categories: ['digital services'],
+    contact: ['Liani Lye', '@lianilychee'],
+    date: '2023-09-11T00:00:00.000Z',
+    thumb: null,
+    screenshot: `experience.png`,
     featured: false,
     stack: ['Python', 'R', 'Azure Functions', `TypeScript`, `React`, `D3`],
     skipSize: 496,
@@ -42,7 +60,7 @@ export const projectData = [
   },
 
   {
-    title: 'Educate program',
+    title: 'Educate program (new)',
     description:
       'The Experience program promotes digital literacy across city government agencies and community organizations across Austin, promoting neighborhood and issue-based dialogue.',
     access_at: null,
@@ -54,24 +72,6 @@ export const projectData = [
     date: '2023-09-11T00:00:00.000Z',
     thumb: null,
     screenshot: `educate.png`,
-    featured: false,
-    stack: ['Python', 'R', 'Azure Functions', `TypeScript`, `React`, `D3`],
-    skipSize: 496,
-  },
-
-  {
-    title: 'Experience program',
-    description:
-      'The Experience Program fosters the next generation of civics and technology leaders by developing data literacy practices, structured problem solving skills, and the ability to work in a collaborative environment.  We train leaders from <bootcamps and other places we source from> while improving open data and public interest technology within city government and other civic Austin organizations.',
-    access_at: null,
-    project_at: null,
-    type: 'scraper',
-    status: 'in development',
-    categories: ['digital services'],
-    contact: ['Liani Lye', '@lianilychee'],
-    date: '2023-09-11T00:00:00.000Z',
-    thumb: null,
-    screenshot: `experience.png`,
     featured: false,
     stack: ['Python', 'R', 'Azure Functions', `TypeScript`, `React`, `D3`],
     skipSize: 496,

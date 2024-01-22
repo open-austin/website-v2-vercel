@@ -17,7 +17,7 @@ export const projectData = [
     contact: ['Liani Lye', '@lianilychee'],
     date: '2023-09-11T00:00:00.000Z',
     thumb: null,
-    screenshot: `indigent-defense.png`,
+    screenshot: `library.png`,
     featured: false,
     stack: ['Python', 'R', 'Azure Functions', `TypeScript`, `React`, `D3`],
     skipSize: 496,
@@ -53,7 +53,7 @@ export const projectData = [
     contact: ['Liani Lye', '@lianilychee'],
     date: '2023-09-11T00:00:00.000Z',
     thumb: null,
-    screenshot: `indigent-defense.png`,
+    screenshot: `educate.png`,
     featured: false,
     stack: ['Python', 'R', 'Azure Functions', `TypeScript`, `React`, `D3`],
     skipSize: 496,
@@ -71,12 +71,13 @@ export const projectData = [
     contact: ['Liani Lye', '@lianilychee'],
     date: '2023-09-11T00:00:00.000Z',
     thumb: null,
-    screenshot: `indigent-defense.png`,
+    screenshot: `experience.png`,
     featured: false,
     stack: ['Python', 'R', 'Azure Functions', `TypeScript`, `React`, `D3`],
     skipSize: 496,
   },
 
+/*
   {
     title: 'Open Austin website',
     description:
@@ -95,6 +96,7 @@ export const projectData = [
     stack: ['Typescript', 'Next.JS', 'Vercel'],
     skipSize: 496,
   },
+*/
 
 /***** ***** ***** ***** ***** *****/
 /*                                 */

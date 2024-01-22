@@ -42,6 +42,42 @@ export const projectData = [
   },
 
   {
+    title: 'Educate program',
+    description:
+      'The Experience program promotes digital literacy across city government agencies and community organizations across Austin, promoting neighborhood and issue-based dialogue.',
+    access_at: null,
+    project_at: null,
+    type: 'scraper',
+    status: 'in development',
+    categories: ['digital services'],
+    contact: ['Liani Lye', '@lianilychee'],
+    date: '2023-09-11T00:00:00.000Z',
+    thumb: null,
+    screenshot: `indigent-defense.png`,
+    featured: false,
+    stack: ['Python', 'R', 'Azure Functions', `TypeScript`, `React`, `D3`],
+    skipSize: 496,
+  },
+
+  {
+    title: 'Experience program',
+    description:
+      'The Experience Program fosters the next generation of civics and technology leaders by developing data literacy practices, structured problem solving skills, and the ability to work in a collaborative environment.  We train leaders from <bootcamps and other places we source from> while improving open data and public interest technology within city government and other civic Austin organizations.',
+    access_at: null,
+    project_at: null,
+    type: 'scraper',
+    status: 'in development',
+    categories: ['digital services'],
+    contact: ['Liani Lye', '@lianilychee'],
+    date: '2023-09-11T00:00:00.000Z',
+    thumb: null,
+    screenshot: `indigent-defense.png`,
+    featured: false,
+    stack: ['Python', 'R', 'Azure Functions', `TypeScript`, `React`, `D3`],
+    skipSize: 496,
+  },
+
+  {
     title: 'Open Austin website',
     description:
       'This website!',
@@ -73,7 +109,7 @@ export const projectData = [
     access_at: '',
     project_at: 'https://github.com/open-austin/phone-code-mapping',
     type: '',
-    status: 'in development',
+    status: 'deployed',
     categories: ['mental health'],
     contact: ['Paul Vonder Haar'],
     date: '',
@@ -84,6 +120,7 @@ export const projectData = [
     skipSize: 496,
   },
 
+/*
   {
     title: 'Power Outages',
     description:
@@ -101,6 +138,7 @@ export const projectData = [
     archived: false,
     skipSize: 496,
   },
+*/
 
   {
     title: 'Visualizing Vulnerable Communities',
@@ -258,13 +296,15 @@ export const projectData = [
     featured: false,
     skipSize: 531,
   },
+
+/*
   {
     title: 'BallotAPI',
     description: 'Free, public-domain database of every ballot in the U.S.',
     access_at: 'https://ballotapi.org/',
     project_at: 'https://github.com/open-austin/ballotapi',
     type: 'web service',
-    status: 'in development',
+    status: 'deployed',
     categories: ['government', 'elections'],
     contact: ['Daniel Roesler', '@diafygi'],
     date: '2019-03-14T00:00:00.000Z',
@@ -274,4 +314,5 @@ export const projectData = [
     stack: ['Python', 'Jekyll', 'PostgreSQL'],
     skipSize: 496,
   },
+*/
 ]

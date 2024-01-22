@@ -26,7 +26,11 @@ export const projectData = [
   {
     title: 'Experience program (new)',
     description:
+      'The Experience Program fosters the next generation of civics and technology leaders by developing data literacy practices, structured problem solving skills, and the ability to work in a collaborative environment.',
+      /*
+      Full blurb:
       'The Experience Program fosters the next generation of civics and technology leaders by developing data literacy practices, structured problem solving skills, and the ability to work in a collaborative environment.  We train leaders from <bootcamps and other places we source from> while improving open data and public interest technology within city government and other civic Austin organizations.',
+      */
     access_at: null,
     project_at: null,
     type: 'scraper',

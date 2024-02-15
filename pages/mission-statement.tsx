@@ -27,8 +27,6 @@ const MissionStatement = () => {
           </Heading>
           <Text>
             Open Austin's mission is to end disparity in Austin with technology and in technology.
-          </Text>
-          <Text>
             We do this through facilitating issue-based conversations between government and residents, providing data and digital service to local nonprofits and community groups, and advocating for policy that utilizes technology to improve our community.
           </Text>
 

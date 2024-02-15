@@ -26,7 +26,12 @@ const MissionStatement = () => {
             Mission Statement
           </Heading>
           <Text>
-            Open Austin's mission is to end disparity with technology and in technology.  We envision a city that respects and serves all people.
+            Open Austin's mission is to end disparity with technology and in technology.  We envision a city that respects We believe that 21st-century government should work for the people,
+            by the people. Open Austin is a volunteer civic technology community
+            consisting of developers, designers, data nerds, policy wonks,
+            resident activists, and countless others. We use technology
+            creatively to address local civic and social challenges, and improve
+            all our neighbors’ quality of life.
           </Text>
         </Stack>
         <Flex

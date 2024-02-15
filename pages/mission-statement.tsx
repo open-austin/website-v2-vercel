@@ -29,7 +29,7 @@ const MissionStatement = () => {
             Our mission is to end disparity in Austin with technology and in technology.  We envision a city that respects and serves all people.
           </Text>
           <Text>
-            asdf 
+            We do this through facilitating issue-based conversations between government and residents, providing service to local nonprofits and community groups that leverage our expertise, and advocating for policy that utilizes technology to improve our community. 
           </Text>
         </Stack>
         <Flex

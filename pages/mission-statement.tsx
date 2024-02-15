@@ -33,13 +33,6 @@ const MissionStatement = () => {
             creatively to address local civic and social challenges, and improve
             all our neighbors’ quality of life.
           </Text>
-          <Text>
-            We are part of the{' '}
-            <Link href="http://www.civictechnologists.org/" isExternal>
-              Alliance of Civic Technologists
-            </Link>
-            .
-          </Text>
         </Stack>
         <Flex
           flex={1}

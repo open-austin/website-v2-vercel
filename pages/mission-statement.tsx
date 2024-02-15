@@ -26,7 +26,7 @@ const MissionStatement = () => {
             Mission Statement
           </Heading>
           <Text>
-            Our mission is to end disparity in Austin with technology and in technology.  We envision a city that respects and serves all people.
+            Our mission is to end disparity in Austin WITH technology and IN technology.  We envision a city that respects and serves all people.
           </Text>
           <Text>
             We do this through facilitating issue-based conversations between government and residents, providing service to local nonprofits and community groups that leverage our expertise, and advocating for policy that utilizes technology to improve our community. 

@@ -31,34 +31,6 @@ const MissionStatement = () => {
           <Text>
             We do this through facilitating issue-based conversations between government and residents, providing data and digital service to local nonprofits and community groups, and advocating for policy that utilizes technology to improve our community.
           </Text>
-          <Text>
-            We value:
-          </Text>
-
-          <UnorderedList layerStyle={'list'}>
-          <ListItem>
-            Build together
-          </ListItem>
-          <ListItem>
-            Change takes time
-          </ListItem>
-          <ListItem>
-            Results-oriented
-          </ListItem>
-          <ListItem>
-            Inclusion is essential
-          </ListItem>
-          <ListItem>
-            Respect, humility, and listening
-          </ListItem>
-          <ListItem>
-            Sustainability
-          </ListItem>
-          <ListItem>
-            Accessible and open
-          </ListItem>
-        </UnorderedList>
-
 
         </Stack>
         <Flex

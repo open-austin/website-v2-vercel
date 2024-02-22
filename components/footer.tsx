@@ -70,7 +70,7 @@ export const Footer = () => (
             />
           </Box>
           <Text fontSize={'sm'} alignSelf="center">
-            © 2022 Open Austin. All rights reserved.
+            © 2024 Open Austin. All rights reserved.
           </Text>
           <Stack direction={'row'} spacing={6} justifyContent="center">
             {SOCIAL_ITEMS.map((link) => (

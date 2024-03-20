@@ -26,19 +26,10 @@ const MissionStatement = () => {
             Mission Statement
           </Heading>
           <Text>
-            We believe that 21st-century government should work for the people,
-            by the people. Open Austin is a volunteer civic technology community
-            consisting of developers, designers, data nerds, policy wonks,
-            resident activists, and countless others. We use technology
-            creatively to address local civic and social challenges, and improve
-            all our neighbors’ quality of life.
+            Our mission is to end disparity in Austin WITH technology and IN technology.  We envision a city that respects and serves all people.
           </Text>
           <Text>
-            We are part of the{' '}
-            <Link href="http://www.civictechnologists.org/" isExternal>
-              Alliance of Civic Technologists
-            </Link>
-            .
+            We do this through facilitating issue-based conversations between government and residents, providing service to local nonprofits and community groups that leverage our expertise, and advocating for policy that utilizes technology to improve our community. 
           </Text>
         </Stack>
         <Flex

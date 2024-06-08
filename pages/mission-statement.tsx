@@ -31,6 +31,16 @@ const MissionStatement = () => {
           <Text>
             We do this through facilitating issue-based conversations between government and residents, providing service to local nonprofits and community groups that leverage our expertise, and advocating for policy that utilizes technology to improve our community. 
           </Text>
+          <Text>
+           We are part of the Electronic Frontier Alliance, and support these principles.  We uphold these principles by fighting for transparency and freedom in culture, code, and law.
+          </Text>
+          <Text>
+            (1.) Free Expression - People should be able to speak their minds to whoever will listen. 
+            (2.) Security - Technology should be trustworthy and answer to its users. 
+            (3.) Privacy - Technology should allow private and anonymous speech, and allow users to set their own parameters about what to share with whom. 
+            (4.) Creativity - Technology should promote progress by allowing people to build on the ideas, creations, and inventions of others. 
+            (5.) Access to Knowledge - Curiosity should be rewarded, not stifled.
+          </Text>
         </Stack>
         <Flex
           flex={1}

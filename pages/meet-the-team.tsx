@@ -44,34 +44,13 @@ const MeetTheTeam = () => (
         <Text mb={2}>Our board consists of:</Text>
         <UnorderedList layerStyle={'list'}>
           <ListItem>
-            <Link href="http://lianilychee.github.io/" isExternal>
-              Liani Lye
-            </Link>{' '}
-            - President
+            Liani Lye
           </ListItem>
           <ListItem>
-            <Link href="https://twitter.com/mcareyaus" isExternal>
-              Matt Carey
-            </Link>{' '}
-            - Treasurer
+            Steve Harrison - Secretary
           </ListItem>
           <ListItem>
-            <Link
-              href="https://www.linkedin.com/in/steve-h-63506b23/"
-              isExternal
-            >
-              Steve Harrison
-            </Link>{' '}
-            - Secretary
-          </ListItem>
-          <ListItem>
-            <Link href="https://www.linkedin.com/in/aaronrenaud/" isExternal>
-              Aaron Renaud
-            </Link>{' '}
-            - At-large Member
-          </ListItem>
-          <ListItem>
-            Courtney Rosenthal
+            Aaron Renaud - President Pro Tem, Treasurer Pro Tem
           </ListItem>
           <ListItem>
             Paul Vonder Haar
@@ -81,6 +60,7 @@ const MeetTheTeam = () => (
           Our advisory council consists of:
         </Text>
         <UnorderedList layerStyle={'list'}>
+          <ListItem>Courtney Rosenthal</ListItem>
           <ListItem>Jae Kwon</ListItem>
           <ListItem>Daniel Roesler</ListItem>
         </UnorderedList>

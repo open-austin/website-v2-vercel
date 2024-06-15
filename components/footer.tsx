@@ -102,7 +102,7 @@ const FOOTER_ITEMS_MORE_INFO: ReadonlyArray<FooterItems> = [
   { href: 'about', label: 'About', key: 'About' },
   { href: 'portfolio', label: 'Portfolio', key: 'Portfolio' },
   {
-    href: 'mailto:info@open-austin.org',
+    href: 'mailto:info+website@open-austin.org',
     label: 'Contact Us',
     key: 'Contact-Us',
   },

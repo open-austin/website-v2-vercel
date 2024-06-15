@@ -296,8 +296,8 @@ const NAV_ITEMS: ReadonlyArray<NavItem> = [
     children: [
       {
         label: 'Join Slack',
-        href: 'mailto:info@open-austin.org?subject=Join%20Slack%20Request',
-        subLabel: 'To receive the slack invite link, please email info@open-austin.org',
+        href: 'mailto:info+website@open-austin.org?subject=Join%20Slack%20Request',
+        subLabel: 'To receive the slack invite link, please email info+website@open-austin.org',
         external: true,
       },
       {

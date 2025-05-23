@@ -24,9 +24,9 @@ export const projectData = [
   },
 
   {
-    title: 'Experience program (new)',
+    title: 'Civic Data Fellowship',
     description:
-      'The Experience Program fosters the next generation of civics and technology leaders by developing data literacy practices, structured problem solving skills, and the ability to work in a collaborative environment.',
+      'Our Civic Data Fellowship trains the next generation of civics and technology leaders by developing data literacy practices, structured problem solving skills, and the ability to work in a collaborative environment.',
       /*
       Full blurb:
       'The Experience Program fosters the next generation of civics and technology leaders by developing data literacy practices, structured problem solving skills, and the ability to work in a collaborative environment.  We train leaders from <bootcamps and other places we source from> while improving open data and public interest technology within city government and other civic Austin organizations.',
@@ -45,24 +45,7 @@ export const projectData = [
     skipSize: 496,
   },
 
-  {
-    title: 'Indigent Defense Stats',
-    description:
-      'Collect and analyze court records from counties across Texas, to compare effectiveness of court-appointed with privately retained attorneys.',
-    access_at: 'https://indigentdefense.net/',
-    project_at: 'https://github.com/open-austin/indigent-defense-stats',
-    type: 'scraper',
-    status: 'in development',
-    categories: ['justice system', 'web scraping'],
-    contact: ['Dan Minshew', '@newswim'],
-    date: '2021-05-14T00:00:00.000Z',
-    thumb: null,
-    screenshot: `indigent-defense.png`,
-    featured: false,
-    stack: ['Python', 'R', 'Azure Functions', `TypeScript`, `React`, `D3`],
-    skipSize: 496,
-  },
-
+/*
   {
     title: 'Educate program (new)',
     description:
@@ -80,6 +63,7 @@ export const projectData = [
     stack: ['TBD'],
     skipSize: 496,
   },
+*/
 
 /*
   {
@@ -123,6 +107,24 @@ export const projectData = [
     screenshot: '',
     featured: true,
     archived: false,
+    skipSize: 496,
+  },
+
+  {
+    title: 'Indigent Defense Stats',
+    description:
+      'Collect and analyze court records from counties across Texas, to compare effectiveness of court-appointed with privately retained attorneys.',
+    access_at: 'https://indigentdefense.net/',
+    project_at: 'https://github.com/open-austin/indigent-defense-stats',
+    type: 'scraper',
+    status: 'in development',
+    categories: ['justice system', 'web scraping'],
+    contact: ['Dan Minshew', '@newswim'],
+    date: '2021-05-14T00:00:00.000Z',
+    thumb: null,
+    screenshot: `indigent-defense.png`,
+    featured: false,
+    stack: ['Python', 'R', 'Azure Functions', `TypeScript`, `React`, `D3`],
     skipSize: 496,
   },
 

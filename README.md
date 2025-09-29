@@ -1,17 +1,20 @@
-#  Open Austin repo
+---
+# This repo is no longer maintained.  [Here](https://open-austin.odoo.com/) is our new website.
+---
+##  Open Austin repo
 
 V2 of the Open Austin website
 
-## Tech stack used:
+### Tech stack used:
 
 - React
 - Next.js
 - Vercel
 
-### Learn more about this repo
+#### Learn more about this repo
 
 To learn about Open Austin and how to find us, visit  [open-austin.org](open-austin.org)
 
-### How to use this repository and install the framework on your local machine
+#### How to use this repository and install the framework on your local machine
 
 Please see the [How to use](./how_to_use.md) file for details

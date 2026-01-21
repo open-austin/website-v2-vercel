@@ -24,9 +24,9 @@ export const projectData = [
   },
 
   {
-    title: 'Experience program (new)',
+    title: 'Civic Data Fellowship',
     description:
-      'The Experience Program fosters the next generation of civics and technology leaders by developing data literacy practices, structured problem solving skills, and the ability to work in a collaborative environment.',
+      'The Civic Data Fellowship trains the next generation of civics and technology leaders by developing data literacy practices, structured problem solving skills, and the ability to work in a collaborative environment.',
       /*
       Full blurb:
       'The Experience Program fosters the next generation of civics and technology leaders by developing data literacy practices, structured problem solving skills, and the ability to work in a collaborative environment.  We train leaders from <bootcamps and other places we source from> while improving open data and public interest technology within city government and other civic Austin organizations.',
@@ -63,23 +63,23 @@ export const projectData = [
     skipSize: 496,
   },
 
-  {
-    title: 'Educate program (new)',
-    description:
-      'The Experience program promotes digital literacy across city government agencies and community organizations across Austin, promoting neighborhood and issue-based dialogue.',
-    //access_at: null,
-    //project_at: null,
-    type: 'scraper',
-    status: 'in development',
-    categories: ['data services'],
-    contact: ['Liani Lye', '@lianilychee'],
-    date: '2023-09-11T00:00:00.000Z',
-    thumb: null,
-    screenshot: `educate.png`,
-    featured: false,
-    stack: ['TBD'],
-    skipSize: 496,
-  },
+  // {
+  //   title: 'Educate program (new)',
+  //   description:
+  //     'The Experience program promotes digital literacy across city government agencies and community organizations across Austin, promoting neighborhood and issue-based dialogue.',
+  //   //access_at: null,
+  //   //project_at: null,
+  //   type: 'scraper',
+  //   status: 'in development',
+  //   categories: ['data services'],
+  //   contact: ['Liani Lye', '@lianilychee'],
+  //   date: '2023-09-11T00:00:00.000Z',
+  //   thumb: null,
+  //   screenshot: `educate.png`,
+  //   featured: false,
+  //   stack: ['TBD'],
+  //   skipSize: 496,
+  // },
 
 /*
   {

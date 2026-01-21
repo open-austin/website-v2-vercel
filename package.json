@@ -1,13 +1,16 @@
 {
-  "name": "website-2022",
-  "version": "0.1.0",
+  "name": "open-austin-website-2025",
+  "version": "1.2.0",
+  "homepage": "https://open-austin.github.io/website-v2-vercel/",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next build && next export"
+    "export": "DEPLOY_TARGET=GH_PAGES next export",
+    "predeploy": "npm run build",
+    "deploy": "npm run build&&gh-pages -d build"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.6",
@@ -18,9 +21,9 @@
     "@vercel/analytics": "^0.1.6",
     "framer-motion": "^6",
     "next": "12.3.1",
+    "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "4.7.1",
-    "react": "18.2.0"
+    "react-icons": "4.7.1"
   },
   "devDependencies": {
     "@types/node": "18.7.2",
@@ -28,6 +31,7 @@
     "@types/react-dom": "18.0.6",
     "eslint": "8.24.0",
     "eslint-config-next": "12.3.1",
+    "gh-pages": "^6.3.0",
     "typescript": "4.9.4"
   }
 }

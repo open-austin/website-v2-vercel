@@ -7,7 +7,6 @@ import {
   Link as ChakraLink,
   Text,
   useColorModeValue,
-  useBreakpointValue,
   Heading,
 } from '@chakra-ui/react'
 import { ReactNode } from 'react'
@@ -24,17 +23,13 @@ export const Footer = () => (
     bg={useColorModeValue('gray.50', 'gray.900')}
     color={useColorModeValue('gray.700', 'gray.200')}
   >
-    <Container
-      as={Stack}
-      maxW={'6xl'}
-      py={useBreakpointValue({ base: 4, md: 10 })}
-    >
+    <Container as={Stack} maxW={'6xl'} py={[4, 10]}>
       <SimpleGrid
         templateColumns={{ base: '1fr 1fr', md: '2fr 1fr 1fr' }}
         templateRows={{ base: '1fr 1fr', md: '1fr' }}
         spacing={8}
       >
-        <Stack order={useBreakpointValue({ base: 1, md: 2 })}>
+        <Stack order={[1, 2]}>
           <Heading as="h2">More Info</Heading>
           {FOOTER_ITEMS_MORE_INFO.map((link) => (
             <Link href={link.href} key={link.key}>
@@ -42,7 +37,7 @@ export const Footer = () => (
             </Link>
           ))}
         </Stack>
-        <Stack order={useBreakpointValue({ base: 2, md: 3 })}>
+        <Stack order={[2, 3]}>
           <Heading as="h2">Support</Heading>
           {FOOTER_ITEMS_SUPPORT.map((link) => (
             <ChakraLink
@@ -58,7 +53,7 @@ export const Footer = () => (
         <Stack
           spacing={6}
           gridColumn={{ base: '1 / -1', md: '1' }}
-          order={useBreakpointValue({ base: 3, md: 1 })}
+          order={[3, 1]}
         >
           <Box alignSelf="center">
             <Image
